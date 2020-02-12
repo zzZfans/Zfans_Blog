@@ -3,172 +3,548 @@
 <html lang="en">
 
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Zfans&#39;s Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zfans&#39;s Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
 
-    <meta name="description" content="Zfans's Blog">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="Zfans&apos;s Blog">
+<meta name="keywords" content="Zfans,zfans">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zfans&#39;s Blog">
+<meta property="og:url" content="https://Zzzfans.github.io/index.html">
+<meta property="og:site_name" content="Zfans&#39;s Blog">
+<meta property="og:description" content="Zfans&apos;s Blog">
+<meta property="og:locale" content="en">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Zfans&#39;s Blog">
+<meta name="twitter:description" content="Zfans&apos;s Blog">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581525598996">-->
 
-
-    <meta name="keywords" content="Zfans,zfans">
-
-
-<title>Zfans&#39;s Blog</title>
-
-
-
-    <link rel="icon" href="/Z.ico">
-
-
-
-
-    <!-- stylesheets list from _config.yml -->
-    
-    <link rel="stylesheet" href="/css/style.css">
-    
-
-
-
-    <!-- scripts list from _config.yml -->
-    
-    <script src="/js/script.js"></script>
-    
-    <script src="/js/tocbot.min.js"></script>
-    
-
-
-
-    
-    
-        
-    
-
-
+  
 </head>
 
-<body>
-
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Zfans&#39;s Blog</a></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Zfans" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Zfans"></a>
+       </div>
+    </div>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Zfans">
+            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Zfans">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>8</div>
+        <div><span>Tags</span>0</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
             </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+        </form>
+    </div>
+</div>
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Social</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
 
-        </div>
-    </nav>
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Archive</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
 
+
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Zfans
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <section class="nexmoe-posts">
     
-    <nav class="navbar-mobile" id="nav-mobile">
-        <div class="container">
-            <div class="navbar-header">
-                <div>
-                    <a href="/">Zfans&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
+    <div class="nexmoe-post">
+        <a href="/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="xrdp 方式 windows 10 连接 ubuntu 18.04" class="lazyload">
+                    <h1>xrdp 方式 windows 10 连接 ubuntu 18.04</h1>
                 </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
-            </div>
-            <div class="menu" id="mobile-menu">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-            </div>
-        </div>
-    </nav>
-
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
-        var mobileMenu = document.getElementById("mobile-menu");
-        if(toggleMenu.classList.contains("active")){
-           toggleMenu.classList.remove("active")
-            mobileMenu.classList.remove("active")
-        }else{
-            toggleMenu.classList.add("active")
-            mobileMenu.classList.add("active")
-        }
-    }
-</script>
-
-        <div class="main">
             
-    <div class="container">
-    <div class="intro">
-        <div class="avatar">
-            <a href="/archives"><img src="/image/Zfans.jpg"></a>
-        </div>
-        <div class="nickname">Zfans</div>
-        <div class="description"><p><strong>The harder you work , the luckier you are .<strong></strong></strong></p>
-</div>
-        <div class="links">
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
+            <a><i class="nexmoefont icon-areachart"></i>284 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
             
-                
-                    <a class="link-item" title="Blog" href="/archives">
-                        
-                        
-                            <i class="iconfont icon-blog"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="QQ" href="https://user.qzone.qq.com/786975232/main">
-                        
-                        
-                            <i class="iconfont icon-qq"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Weibo" href="https://weibo.com/p/1005055271218212/home?from=page_100505&amp;mod=TAB#place">
-                        
-                        
-                            <i class="iconfont icon-weibo"></i>
-                        
-                    </a>
-                
-                    <a class="link-item" title="Github" href="https://github.com/Zzzfans">
-                        
-                        
-                            <i class="iconfont icon-github"></i>
-                        
-                    </a>
-                
             
         </div>
+        <article>
+            
+                <p>你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。</p>
+<p>我这边因为需要vmplayer这个软件，此软件一定需要一个gui界面才能启动，所以安装了桌面版的ubuntu，但是远程维护的话，就需要用到远程桌面了。</p>
+<h2 id="xrdp-vs-vnc-vs-…"><a href="#xrdp-vs-vnc-vs-…" class="headerlink" title="xrdp vs vnc vs …"></a>xrdp vs vnc vs …</h2><p>xrdp是原生方案，兼容性是最好的，也不需要太多额外的软件支持。其他的请自行google。</p>
+<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p>仅需要</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install xrdp</span><br></pre></td></tr></table></figure>
+
+<h2 id="编辑配置"><a href="#编辑配置" class="headerlink" title="编辑配置"></a>编辑配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/xrdp/startwm.sh</span><br></pre></td></tr></table></figure>
+
+<p>把最下面的test和exec两行注释掉，添加一行</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnome-session</span><br></pre></td></tr></table></figure>
+
+<h2 id="重新启动ubuntu，不要登录！"><a href="#重新启动ubuntu，不要登录！" class="headerlink" title="重新启动ubuntu，不要登录！"></a>重新启动ubuntu，不要登录！</h2><h2 id="windows远程桌面连接"><a href="#windows远程桌面连接" class="headerlink" title="windows远程桌面连接"></a>windows远程桌面连接</h2><ol>
+<li><p>windows打开远程桌面输入ubuntu主机ip或者主机名</p>
+</li>
+<li><p>选择xorg，输入用户名密码</p>
+</li>
+<li><p>会提示几次授权修改主机的颜色设置什么的，都可以cancel掉，然后即可登陆成功</p>
+</li>
+<li><p><a href="https://zhuanlan.zhihu.com/p/40937988" target="_blank" rel="noopener">原文链接。</a></p>
+</li>
+</ol>
+
+            
+        </article>
     </div>
-</div>
-
- 
-        </div>
-
-        <footer id="footer" class="footer">
-    <div class="copyright">
-        <span>© Zfans | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
-    </div>
-</footer>
-
-    </div>
-
     
-        <script type="text/javascript" color="0,0,0" opacity="0.3" zindex="-2" count="99" src="/js/canvas-nest.js"></script>
-        
-        
+    <div class="nexmoe-post">
+        <a href="/2019/08/31/Qt实现多级菜单/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Qt 实现多级菜单" class="lazyload">
+                    <h1>Qt 实现多级菜单</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
+            <a><i class="nexmoefont icon-areachart"></i>642 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。</p>
+<p>下图就是我们最常见的Windows系统多级菜单：</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20171122142111936?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGVhdmVuX0V2aWw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload"></p>
+<h1 id="Qt实现（多级）菜单"><a href="#Qt实现（多级）菜单" class="headerlink" title="Qt实现（多级）菜单"></a>Qt实现（多级）菜单</h1><p>在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由一个图标和一段文字描述组成。要先右键弹出菜单我们需要重写contextMenuEvent(QContextMenuEvent *event)事件，如果是按钮菜单等关联信号槽，在槽函数弹出菜单即可。</p>
+<h1 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::createMenu()</span><br><span class="line">&#123;</span><br><span class="line">    m_menu1 = <span class="keyword">new</span> QMenu();</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    QMenu* menu2 = m_menu1-&gt;addMenu(<span class="string">"2_0"</span>);</span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    QMenu* menu3 = menu2-&gt;addMenu(<span class="string">"3_0"</span>);</span><br><span class="line">    menu2-&gt;addSeparator();</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    m_menu1-&gt;addSeparator();</span><br><span class="line"> </span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_4"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>createMenu()函数中创建了三个菜单，通过addAction()函数添加小项目到每个菜单中,addAction()同时提供关联到对象槽函数的重载版本，这样就可以在添加的同时也关联好槽函数，addMenu()给菜单添加下级菜单，当鼠标滑到addMenu()添加的项目是会自动弹出下级菜单。addSeparator()在每个QAction之间添加分离器。通过addAction()和addMenu()的结合使用就可以构造看起来很强大的多级菜单，再通过实现它们的槽函数我们就可以实现每个QAction被点击时要响应的事件。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::actionsSlot()</span><br><span class="line">&#123;</span><br><span class="line">    QAction *action = (QAction*)sender();</span><br><span class="line">    QString actionText = action-&gt;text();</span><br><span class="line"> </span><br><span class="line">    qDebug()&lt;&lt;actionText&lt;&lt;<span class="string">"triggerred!"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span>(<span class="string">"1_1"</span> == actionText) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="string">"1_2"</span> == actionText) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>该槽函数处理QAction点击的时候要处理的事情。通过sender()取得发送信号的对象，再取得QAction的属性就可以在代码逻辑中分别处理不同的QAction该处理的事情。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::contextMenuEvent(QContextMenuEvent *event)</span><br><span class="line">&#123;</span><br><span class="line">    m_menu1-&gt;exec(QCursor::pos());</span><br><span class="line">    event-&gt;accept();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>重写contextMenuEvent()事件用于处理鼠标右键事件，但右击鼠标时，在鼠标点击的位置弹出菜单。</p>
+<h1 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h1><p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20171122145014050?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGVhdmVuX0V2aWw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload"></p>
+<p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/heaven_evil/article/details/78601478" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/31/设置QLineEdit无边框且透明/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="设置 QLineEdit 无边框且透明" class="lazyload">
+                    <h1>设置 QLineEdit 无边框且透明</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
+            <a><i class="nexmoefont icon-areachart"></i>12 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ui-&gt;lineEdit-&gt;setStyleSheet(<span class="string">"background:transparent;border-width:0;border-style:outset"</span>);</span><br></pre></td></tr></table></figure>
+
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/30/Qt5-12之程序发布教程（Windows）/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Qt5.12 之程序发布教程（Windows）" class="lazyload">
+                    <h1>Qt5.12 之程序发布教程（Windows）</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
+            <a><i class="nexmoefont icon-areachart"></i>475 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <hr>
+<p>在Windows平台下，用Qtcreator生成的SerialPort.exe,直接打开，可能出现以下等问题。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181224221054517.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>这是缺少相应的库文件，只要把库文件找到，并粘贴在SerialPort.exe目录下就可以了。</p>
+<hr>
+<h1 id="一、找到SerialPort-exe的路径，并复制该路径。"><a href="#一、找到SerialPort-exe的路径，并复制该路径。" class="headerlink" title="一、找到SerialPort.exe的路径，并复制该路径。"></a>一、找到SerialPort.exe的路径，并复制该路径。</h1><p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181224222225468.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<h1 id="二、按下win-Q（win10）打开Windows搜索框，输入qt，就很容易找到qt-5-12-0-for-desktop，然后打开。"><a href="#二、按下win-Q（win10）打开Windows搜索框，输入qt，就很容易找到qt-5-12-0-for-desktop，然后打开。" class="headerlink" title="二、按下win+Q（win10）打开Windows搜索框，输入qt，就很容易找到qt 5.12.0 for desktop，然后打开。"></a>二、按下win+Q（win10）打开Windows搜索框，输入qt，就很容易找到qt 5.12.0 for desktop，然后打开。</h1><p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181224221551798.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<h1 id="三、进入需要打包软件的路径"><a href="#三、进入需要打包软件的路径" class="headerlink" title="三、进入需要打包软件的路径"></a>三、进入需要打包软件的路径</h1><p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225224625648.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<h1 id="四、输入windeployqt-SerialPort-exe"><a href="#四、输入windeployqt-SerialPort-exe" class="headerlink" title="四、输入windeployqt SerialPort.exe"></a>四、输入windeployqt SerialPort.exe</h1><p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225225105763.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>这时，可以发现SerialPort.exe所在的目录多了很多库文件，直接点击SerialPort.exe，也可以打开了。如果把这整个文件夹压缩打包，在其他电脑解压后，也是可运行的。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225225320258.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<h1 id="五、使用免费打包软件Engima-Virtual-Box。"><a href="#五、使用免费打包软件Engima-Virtual-Box。" class="headerlink" title="五、使用免费打包软件Engima Virtual Box。"></a>五、使用免费打包软件<a href="https://enigmaprotector.com/en/downloads.html" target="_blank" rel="noopener">Engima Virtual Box</a>。</h1><p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225225852962.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>软件的安装非常简单，next、accepte、next、next搞定。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225225924945.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>如果不喜欢英文可以选择中文，关闭重新打开软件就生效了。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225230203503.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225231418769.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>封包的主程序：选择需要进行封包的SerialPort.exe,这个必须要有，其他可以不选择，为了避免其他电脑没有相应的库文件等，建议把所有依赖的文件都打包，即SerialPort.exe整个目录。</p>
+<p>封包程序另存为：生成的程序的路径，已自动命名，可以自定义名字，不能和SerialPort.exe重名。</p>
+<p>文件：依赖文件，记得把SerialPort.exe移除</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225232537432.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>点击文件选择，选择压缩文件，可以生成更小的程序包，但是以后每次打开软件都需要解压，即启动时间变慢。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/2018122523231366.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>完成上面的操作，就可以点击执行封包。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225232621309.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>封包完成</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20181225232848887.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70" alt="img" class="lazyload"></p>
+<p>在SerialPort.exe目录下，可以发现SerialPort_boxed.exe，把它复制到其他文件夹都可以直接运行。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/2018122523293113.png" alt="img" class="lazyload"></p>
+<p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/future_ai/article/details/85239915" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/30/将本地文件上传到github/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="将本地文件上传到 GitHub" class="lazyload">
+                    <h1>将本地文件上传到 GitHub</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
+            <a><i class="nexmoefont icon-areachart"></i>499 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>GitHub开源代码库以及版本控制系统，可以托管各种git库，可以将个人Blog或小型项目托管到GitHub通过Git将本地文件上传到GitHub上边也可用于保存。</p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h4 id="1、下载Git"><a href="#1、下载Git" class="headerlink" title="1、下载Git"></a>1、下载Git</h4><ol>
+<li><p>可自行前往官网下载</p>
+</li>
+<li><p>也可<a href="https://git-scm.com/downloads" target="_blank" rel="noopener">点此下载</a></p>
+</li>
+</ol>
+<h4 id="2、登录GitHub，创建项目"><a href="#2、登录GitHub，创建项目" class="headerlink" title="2、登录GitHub，创建项目"></a>2、登录GitHub，创建项目</h4><p><a href="https://github.com/" target="_blank" rel="noopener">点此登录</a></p>
+<h4 id="3、在GitHub上创建一个仓库"><a href="#3、在GitHub上创建一个仓库" class="headerlink" title="3、在GitHub上创建一个仓库"></a>3、在GitHub上创建一个仓库</h4><p>如果是第一次创建界面可能不太一样，摸索下怎么创建仓库<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802165702396?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802165653151?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<h4 id="4、获取该仓库的地址"><a href="#4、获取该仓库的地址" class="headerlink" title="4、获取该仓库的地址"></a>4、获取该仓库的地址</h4><p>复制该地址<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802170016745?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<h4 id="5、打开你要上传的本地文件"><a href="#5、打开你要上传的本地文件" class="headerlink" title="5、打开你要上传的本地文件"></a>5、打开你要上传的本地文件</h4><h5 id="如果你安装完成了Git的话，右键会有Git-Brash-Here这个选项，选择此选项，"><a href="#如果你安装完成了Git的话，右键会有Git-Brash-Here这个选项，选择此选项，" class="headerlink" title="如果你安装完成了Git的话，右键会有Git Brash Here这个选项，选择此选项，"></a>如果你安装完成了Git的话，右键会有<strong>Git Brash Here</strong>这个选项，选择此选项，</h5><p>git clone +url url为一开始复制的仓库地址<br>将存储库克隆到新创建的目录中<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/201808021712101?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<h4 id="6、将本地文件复制到新的目录下"><a href="#6、将本地文件复制到新的目录下" class="headerlink" title="6、将本地文件复制到新的目录下"></a>6、将本地文件复制到新的目录下</h4><p>打开你要上传的文件，里面会出现一个新的文件夹，就是你在GitHub上面创建的仓库，将除了新文件夹的其他东西都拷贝到这个新出的文件夹里面<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802171433253?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<h4 id="7、回到刚的Git命令行下"><a href="#7、回到刚的Git命令行下" class="headerlink" title="7、回到刚的Git命令行下"></a>7、回到刚的Git命令行下</h4><p>1、进入新创建的文件夹，可以用 <code>cd 文件夹名</code><br>也可以选择该文件夹，在右键<code>git brash here</code></p>
+<p>2、输入<code>git add .</code></p>
+<h4 id="注意不要忘记后面的点"><a href="#注意不要忘记后面的点" class="headerlink" title="注意不要忘记后面的点"></a>注意不要忘记后面的点</h4><p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802171930317?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<p>等它自动添加完成</p>
+<p>3、输入<code>git commit -m &quot;Infomation&quot;</code><br>提交到本地的版本控制库里，引号里面是你对本次提交的说明信息，可以随意书写。<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802172257974?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"> </p>
+<p>4、最后输入<code>git push -u origin master</code><br>将你本地的仓库提交到你的GitHub，最后会让输入你的GitHub的账号和密码，输入回车之后再去看GitHub项目，就看到你本地项目出现在GitHub上了！<br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802172741897?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"><br><img data-sizes="auto" data-src="https://img-blog.csdn.net/20180802172901649?watermark/2/text/aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3FxXzM5MDk4ODEz/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70" alt="这里写图片描述" class="lazyload"></p>
+<p>然后就大功告成了！！！</p>
+<p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/qq_39098813/article/details/81364417" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/30/hexo-github搭建博客/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hexo+GitHub 搭建博客" class="lazyload">
+                    <h1>Hexo+GitHub 搭建博客</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
+            <a><i class="nexmoefont icon-areachart"></i>783 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>好的学习习惯就是随手记录学习历程，随手记录一下最近刚学习的用Hexo+GitHub搭建博客的过程。小白一个，可提建议，勿喷~</p>
+<h1 id="步骤"><a href="#步骤" class="headerlink" title="步骤"></a>步骤</h1><h3 id="1-安装Nodejs"><a href="#1-安装Nodejs" class="headerlink" title="1.安装Nodejs"></a>1.安装Nodejs</h3><p>在Node<a href="https://nodejs.org/en/" target="_blank" rel="noopener">官网</a>下载LTS版本，然后一路next进行安装，我安装到了C盘。</p>
+<h3 id="2-安装Git"><a href="#2-安装Git" class="headerlink" title="2.安装Git"></a>2.安装Git</h3><p>Download<a href="https://gitforwindows.org/" target="_blank" rel="noopener">Git</a>，一般可以一路next下去，最后可在cmd输入Git判断是否安装正常。</p>
+<h3 id="3-注册GitHub账号并配置SSH"><a href="#3-注册GitHub账号并配置SSH" class="headerlink" title="3.注册GitHub账号并配置SSH"></a>3.注册GitHub账号并配置SSH</h3><p>新手<a href="https://github.com/" target="_blank" rel="noopener">注册</a>时一定要记好<em>用户名、邮箱及密码</em>，后面还会用，注册好后点击头像左边的+号创建仓库New repository，如图，注意命名要一致，这样仓库就建好了。<img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20190318192123157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70" alt="Repository name" class="lazyload"></p>
+<p>接下来打开刚才下载的git-bash.exe，输入<code>ssh-keygen -t rsa -C &quot;yourgithub邮箱&quot;</code>回车，再回车三次，成功生成ssh，在GitHub点击头像下的Settings–&gt;SSH and GPG keys–&gt;New SSH key，Title 随意写，可以写成自己的用户名，key 写刚才生成的ssh，默认在C:\用户\Administrator.ssh\id_rsa.pub 里，将里面的内容复制粘贴过去，Add SSH key，这样就配置好了。</p>
+<h3 id="4-安装Hexo"><a href="#4-安装Hexo" class="headerlink" title="4.安装Hexo"></a>4.安装Hexo</h3><p>我是在D盘创建一个Hexo文件夹，cmd该文件夹，输入<code>npm install hexo-cli -g</code> 回车，然后<code>hexo init 3hsaBlog</code>(这个名字自行定义，自己的博客内容以后都在这里面)，再依次执行<code>cd 3hsaBlog</code>，<code>npm install</code>，<code>hexo s</code>(或<code>hexo s -p 端口号(5000)</code>)，就可以浏览器访问自己的博客了，Ctrl+C停止本地服务器。</p>
+<h3 id="5-Hexo部署到GitHub上"><a href="#5-Hexo部署到GitHub上" class="headerlink" title="5.Hexo部署到GitHub上"></a>5.Hexo部署到GitHub上</h3><p>打开3hsaBlog文件夹里的_config.yml文件，修改里面如图所示内容。</p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/2019031919380989.png" alt="your site" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/2019031919384728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70" alt="repo 值" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20190319193953250.png" alt="修改结果" class="lazyload"></p>
+<p>其他内容可自行修改（如title、keywords、author等），<em>注意：_config.yml文件里冒号后面都有一个空格</em>。每次修改后记得保存！接下来在3hsaBlog文件下cmd依次执行以下代码：</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br><span class="line"> / /接下来会提示分别输入以下代码</span><br><span class="line">git config --global uesr.email &quot;your邮箱&quot;</span><br><span class="line"></span><br><span class="line">git config --global uesr.name &quot;github用户名&quot;</span><br></pre></td></tr></table></figure>
+
+<p>执行成功会跳出GitHub的login框，那就登陆吧，如果不对，可能会再次在命令行提示输入，登陆成功即表示部署成功，现在就可以在浏览器输入<code>username.github.io</code>访问自己的博客了。</p>
+<h3 id="续"><a href="#续" class="headerlink" title="续"></a>续</h3><p>搭建好的博客默认主题为landscape，一般不会有人喜欢，可在<a href="https://hexo.io/themes" target="_blank" rel="noopener">Themes</a>里选择自己喜欢的主题下载或克隆进行修改完善。<br><em>发布文章的步骤</em>：可在CDSN用Markdown编辑器编写，导出为Markdown文件，将生成的.md文件放在自己博客文件夹下的source–&gt;_post文件夹里，然后在自己博客文件右击进入Git bash，执行hexo g、hexo d，就上传好了，可以hexo s先在本地浏览一下，再用网址访问，自我感觉这样更新快一点。用来编写.md文件的编辑器还有很多，可在度娘求知。</p>
+<p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/SOSP_LM/article/details/88649316" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/30/Chic/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Chic 安装文档" class="lazyload">
+                    <h1>Chic 安装文档</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
+            <a><i class="nexmoefont icon-areachart"></i>1,264 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <h1 align="center"><a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic Theme</a></h1>
+
+<p align="center">
+<img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d006bd289aa325037.png" alt="Chic theme" class="lazyload">
+</p>
+
+<blockquote>
+<p>Chic,法语词意同’Elegant’</p>
+</blockquote>
+<p align="center">
+<img alt="Author" src="https://img.shields.io/badge/Author-Sirice-blue.svg">
+<img alt="node.js" src="https://img.shields.io/badge/node.js-6.0%2B-43853d.svg?style=flat-square">
+<img alt="Hexo" src="https://img.shields.io/badge/hexo-3.0+-0e83cd.svg?style=flat-square">
+<img alt="Build Status" src="https://img.shields.io/badge/device-responsive-orange.svg">
+<img alt="Build Status" src="https://img.shields.io/travis/viosey/hexo-theme-material.svg?style=flat-square">
+</p>
+## Introduction 介绍
+
+<p>优雅、功能全面、阅读友好的hexo主题。</p>
+<h2 id="Demo-演示"><a href="#Demo-演示" class="headerlink" title="Demo 演示"></a>Demo 演示</h2><ul>
+<li><a href="https://siricee.github.io/hexo-theme-Chic" target="_blank" rel="noopener">Demo site</a></li>
+<li><a href="https://siricee.github.io/" target="_blank" rel="noopener">作者的博客</a></li>
+</ul>
+<h2 id="Features-特点"><a href="#Features-特点" class="headerlink" title="Features 特点"></a>Features 特点</h2><ul>
+<li>恰到好处的留白，优雅却不简陋。</li>
+<li>夜间模式主题一键切换。</li>
+<li>多种代码高亮方案。</li>
+<li>精心挑选的字体，最好的阅读体验。* <em>特别推荐 微软正黑</em></li>
+<li>响应式适配移动端/桌面端。</li>
+<li>支持MathJax，支持LaTeX语法的数学公式</li>
+</ul>
+<h2 id="Installation-安装"><a href="#Installation-安装" class="headerlink" title="Installation 安装"></a>Installation 安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> your-blog/themes</span><br><span class="line">git <span class="built_in">clone</span> https://github.com/Siricee/hexo-theme-Chic.git Chic</span><br><span class="line">// Modify theme setting <span class="keyword">in</span> _config.yml to Chic.</span><br></pre></td></tr></table></figure>
+
+<h2 id="Configuration-配置"><a href="#Configuration-配置" class="headerlink" title="Configuration 配置"></a>Configuration 配置</h2><details>
+<summary><mark>点击展开配置文件</mark></summary>
+
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># html lang</span></span><br><span class="line"><span class="attr">language:</span> <span class="string">en</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Header</span></span><br><span class="line"><span class="attr">navname:</span> <span class="string">Bentham's</span> <span class="string">Blog</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># navigatior items</span></span><br><span class="line"><span class="attr">nav:</span></span><br><span class="line"><span class="attr">  Posts:</span> <span class="string">/archives</span></span><br><span class="line"><span class="attr">  Categories:</span> <span class="string">/category</span></span><br><span class="line"><span class="attr">  Tags:</span> <span class="string">/tag</span></span><br><span class="line"><span class="attr">  About:</span> <span class="string">/about</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># favicon</span></span><br><span class="line"><span class="attr">favicon:</span> <span class="string">/favicon.ico</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Profile</span></span><br><span class="line"><span class="attr">nickname:</span> <span class="string">Jeremy</span> <span class="string">Bentham</span></span><br><span class="line"></span><br><span class="line"><span class="comment">### this variable is MarkDown form.</span></span><br><span class="line"><span class="attr">description:</span> <span class="string">Lorem</span> <span class="string">ipsum</span> <span class="string">dolor</span> <span class="string">sit</span> <span class="string">amet,</span> <span class="string">**consectetur</span> <span class="string">adipiscing</span> <span class="string">elit.**</span> <span class="string">&lt;br&gt;Fusce</span> <span class="string">eget</span> <span class="string">urna</span> <span class="string">vitae</span> <span class="string">velit</span> <span class="meta">*eleifend</span> <span class="string">interdum</span> <span class="string">at</span> <span class="string">ac*</span> <span class="string">nisi.</span></span><br><span class="line"><span class="attr">avatar:</span> <span class="string">/image/avatar.jpeg</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># main menu navigation</span></span><br><span class="line"><span class="comment">## links key words should not be changed.</span></span><br><span class="line"><span class="comment">## Complete url after key words.</span></span><br><span class="line"><span class="comment">## Unused key can be commented out.</span></span><br><span class="line"><span class="attr">links:</span></span><br><span class="line"><span class="attr">  Blog:</span> <span class="string">/</span></span><br><span class="line"><span class="comment">#  Category:</span></span><br><span class="line"><span class="comment">#  Tags:</span></span><br><span class="line"><span class="comment">#  Link:</span></span><br><span class="line"><span class="comment">#  Resume:</span></span><br><span class="line"><span class="comment">#  Publish:</span></span><br><span class="line"><span class="comment">#  Trophy:</span></span><br><span class="line"><span class="comment">#  Gallary:</span></span><br><span class="line"><span class="comment">#  RSS:</span></span><br><span class="line"><span class="comment">#  AliPay:</span></span><br><span class="line"><span class="attr">  ZhiHu:</span> <span class="attr">https://www.zhihu.com/people/sirice</span></span><br><span class="line"><span class="comment">#  LinkedIn:</span></span><br><span class="line"><span class="comment">#  FaceBook:</span></span><br><span class="line"><span class="comment">#  Twitter:</span></span><br><span class="line"><span class="comment">#  Skype:</span></span><br><span class="line"><span class="comment">#  CodeSandBox:</span></span><br><span class="line"><span class="comment">#  CodePen:</span></span><br><span class="line"><span class="comment">#  Sketch:</span></span><br><span class="line"><span class="comment">#  Gitlab:</span></span><br><span class="line"><span class="comment">#  Dribble:</span></span><br><span class="line"><span class="attr">  Instagram:</span></span><br><span class="line"><span class="attr">  Reddit:</span></span><br><span class="line"><span class="comment">#  YouTube:</span></span><br><span class="line"><span class="comment">#  QQ:</span></span><br><span class="line"><span class="comment">#  Weibo:</span></span><br><span class="line"><span class="comment">#  WeChat:</span></span><br><span class="line"><span class="attr">  Github:</span> <span class="attr">https://github.com/Siricee</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># how links show: you have 2 choice--text or icon.</span></span><br><span class="line"><span class="attr">links_text_enable:</span> <span class="literal">false</span></span><br><span class="line"><span class="attr">links_icon_enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Post page</span></span><br><span class="line"><span class="comment">## Post_meta</span></span><br><span class="line"><span class="attr">post_meta_enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">post_author_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_date_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_category_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="comment">## Post copyright</span></span><br><span class="line"><span class="attr">post_copyright_enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="attr">post_copyright_author_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_copyright_permalink_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_copyright_license_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_copyright_license_text:</span> <span class="string">Copyright</span> <span class="string">(c)</span> <span class="number">2019</span> <span class="string">&lt;a</span> <span class="string">href="http://creativecommons.org/licenses/by-nc/4.0/"&gt;CC-BY-NC-4.0&lt;/a&gt;</span> <span class="string">LICENSE</span></span><br><span class="line"><span class="attr">post_copyright_slogan_enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">post_copyright_slogan_text:</span> <span class="string">Do</span> <span class="string">you</span> <span class="string">believe</span> <span class="string">in</span> <span class="string">&lt;strong&gt;DESTINY&lt;strong&gt;?</span></span><br><span class="line"><span class="comment">## toc</span></span><br><span class="line"><span class="attr">post_toc_enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Page</span></span><br><span class="line"><span class="attr">page_title_enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># Date / Time format</span></span><br><span class="line"><span class="comment">## Hexo uses Moment.js to parse and display date</span></span><br><span class="line"><span class="comment">## You can customize the date format as defined in</span></span><br><span class="line"><span class="comment">## http://momentjs.com/docs/#/displaying/format/</span></span><br><span class="line"><span class="attr">date_format:</span> <span class="string">MMMM</span> <span class="string">D,</span> <span class="string">YYYY</span></span><br><span class="line"><span class="attr">time_format:</span> <span class="attr">H:mm:ss</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># stylesheets loaded in the &lt;head&gt;</span></span><br><span class="line"><span class="attr">stylesheets:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">/css/style.css</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># scripts loaded in the end of the body</span></span><br><span class="line"><span class="attr">scripts:</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">/js/script.js</span></span><br><span class="line"><span class="bullet">  -</span> <span class="string">/js/tocbot.min.js</span></span><br><span class="line">    <span class="comment"># tscanlin/tocbot: Build a table of contents from headings in an HTML document.</span></span><br><span class="line">    <span class="comment"># https://github.com/tscanlin/tocbot</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment"># plugin functions</span></span><br><span class="line"><span class="comment">## Mathjax: Math Formula Support</span></span><br><span class="line"><span class="comment">## https://www.mathjax.org</span></span><br><span class="line"><span class="attr">mathjax:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  import:</span> <span class="string">demand</span> <span class="comment"># global or demand</span></span><br><span class="line">  <span class="comment">## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.</span></span><br><span class="line">  <span class="comment">## demand: Recommend option,if your post need fomula, you can declare 'mathjax: true' in Front-matter</span></span><br></pre></td></tr></table></figure>
+
+</details>
+<br>
+
+<h3 id="添加Tag、Category页面"><a href="#添加Tag、Category页面" class="headerlink" title="添加Tag、Category页面"></a>添加Tag、Category页面</h3><p>Hexo初始化没有tag、category页面，需要自行添加，本主题请按以下步骤进行:<br></p>
+<ol>
+<li>执行命令</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">hexo new page tag</span><br><span class="line">hexo new page category</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>进入页面目录</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> <span class="built_in">source</span>/tag</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>增加layout字段</li>
+</ol>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">//</span> <span class="string">source\tag\index.md</span></span><br><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">Tag</span></span><br><span class="line"><span class="attr">layout:</span> <span class="string">tag</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<ol start="4">
+<li>category页面同理，layout字段键值为category。 <br></li>
+</ol>
+<h3 id="开启MathJax支持（数学公式）"><a href="#开启MathJax支持（数学公式）" class="headerlink" title="开启MathJax支持（数学公式）"></a>开启MathJax支持（数学公式）</h3><p>相关配置文件内容（<code>Chic/_config.yml</code>）：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># plugin functions</span></span><br><span class="line"><span class="comment">## Mathjax: Math Formula Support</span></span><br><span class="line"><span class="comment">## https://www.mathjax.org</span></span><br><span class="line"><span class="attr">mathjax:</span></span><br><span class="line"><span class="attr">  enable:</span> <span class="literal">true</span></span><br><span class="line"><span class="attr">  import:</span> <span class="string">global</span> <span class="comment"># global or demand</span></span><br><span class="line">  <span class="comment">## global: all pages will load mathjax,this will degrade performance and some grammers may be parsed wrong.</span></span><br><span class="line">  <span class="comment">## demand: if your post need fomula, you can declare 'mathjax: true' in Front-matter</span></span><br></pre></td></tr></table></figure>
+
+<p><code>mathjax</code>有如下字段：</p>
+<ul>
+<li><p><code>enable</code>:值为true为开启该功能（默认开启）；false为关闭</p>
+</li>
+<li><p><code>import</code>:该字段为mathjax的加载方式，可选值为<code>global</code>和<code>demand</code>。</p>
+<ul>
+<li><p><code>global</code>：全局引入，所有页面均加载。好处是便利，缺点是可能会导致部分markdown语法被错误解析，比如连续<code>$$</code>会被解析为公式；而且全局引入会在没有公式的页面明显浪费页面性能。</p>
+</li>
+<li><p><code>demand</code>【推荐方式】：按需引入。使用方法为在config中设置该字段后，文章中如果需要使用mathjax，在Front-matter中声明即可</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">---</span></span><br><span class="line"><span class="attr">title:</span> <span class="string">MathJax</span> <span class="string">Test</span></span><br><span class="line"><span class="attr">date:</span> <span class="number">2019</span><span class="bullet">-07</span><span class="bullet">-05</span> <span class="number">21</span><span class="string">:27:59</span></span><br><span class="line"><span class="attr">tags:</span></span><br><span class="line"><span class="attr">mathjax:</span> <span class="literal">true</span> <span class="comment"># 加入这个声明，这篇文章就会开启mathjax渲染</span></span><br><span class="line"><span class="meta">---</span></span><br></pre></td></tr></table></figure>
+
+<p>LaTeX语法这里不做解释，本主题中，单dollar符号包围的为行内公式，例：<code>$f(x)=ax+b$</code>，双dollar符号包围的为块公式，例<code>$$f(x)=ax+b$$</code>更多写法请参考LaTeX和<a href="https://siricee.github.io/hexo-theme-Chic/2019/07/05/MathJax_test/" target="_blank" rel="noopener">Demo site中的公式测试页面</a>。</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="Customize-自定义"><a href="#Customize-自定义" class="headerlink" title="Customize 自定义"></a>Customize 自定义</h2><ul>
+<li>代码高亮风格 在<code>hexo-theme-Chic\themes\Chic\source\css\style.styl</code>中更改highlight为<code>_highlight</code>文件夹中的stylus文件即可更换代码高亮风格。</li>
+<li>自定义css(stylus语法) 您可以在<code>hexo-theme-Chic\themes\Chic\source\css\custom.styl</code>路径文件中添加css规则</li>
+<li>自定义JavaScript 您可以在<code>hexo-theme-Chic\themes\Chic\source\js</code>路径中添加js脚本，并在_config.yml中<code>script</code>字段添加声明。</li>
+</ul>
+<h2 id="FAQ-提问"><a href="#FAQ-提问" class="headerlink" title="FAQ 提问"></a>FAQ 提问</h2><ol>
+<li><p>我在二级地址（非github page根repo，即username.github.io/Blog）上部署了hexo，为什么css、avatar等资源都404了？</p>
+<p>答：此处需要另外填写主配置文件URL字段。以该主题repo为例：</p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># (blog/_config.yml)</span></span><br><span class="line"></span><br><span class="line"><span class="comment"># URL</span></span><br><span class="line"><span class="comment">## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'</span></span><br><span class="line"><span class="attr">url:</span> <span class="attr">https://siricee.github.io/hexo-theme-Chic/</span>  <span class="comment"># 此处为你的部署url</span></span><br><span class="line"><span class="attr">root:</span> <span class="string">/hexo-theme-Chic/</span>  <span class="comment"># 此处为你的项目根文件夹url。</span></span><br><span class="line"><span class="attr">permalink:</span> <span class="string">:year/:month/:day/:title/</span></span><br><span class="line"><span class="attr">permalink_defaults:</span></span><br></pre></td></tr></table></figure>
+</li>
+<li><p>常见问题待补充……    </p>
+</li>
+</ol>
+<h2 id="Gallary-图片展示"><a href="#Gallary-图片展示" class="headerlink" title="Gallary 图片展示"></a>Gallary 图片展示</h2><p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0850285252790.png" alt="screely-1560228577821.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0856063661133.png" alt="screely-1560228791041.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a084e29cd40271.png" alt="screely-1560228621288.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0855d28072392.png" alt="screely-1560228761180.png" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a085d115d16700.png" alt="smartmockups_jwrd4ru3.png" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a085ec26284832.png" alt="smartmockups_jwrd9y4r.png" class="lazyload"></p>
+<h2 id="LICENSE-开源许可"><a href="#LICENSE-开源许可" class="headerlink" title="LICENSE 开源许可"></a>LICENSE 开源许可</h2><p>Chic © <a href="https://github.com/Siricee" target="_blank" rel="noopener">@Sirice</a></p>
+<p><a rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>This work is licensed under a <a rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
+
+            
+        </article>
+    </div>
+    
+    <div class="nexmoe-post">
+        <a href="/2019/08/27/hello-world/">
+            
+                <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
+                    <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hello World" class="lazyload">
+                    <h1>Hello World</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月27日</a>
+            <a><i class="nexmoefont icon-areachart"></i>78 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+            
+            
+        </div>
+        <article>
+            
+                <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+            
+        </article>
+    </div>
+    
+</section>
+
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--<script src="/js/app.js?v=1581525598999"></script>-->
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
 </body>
 
 </html>

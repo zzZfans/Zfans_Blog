@@ -3,203 +3,168 @@
 <html lang="en">
 
 <head><meta name="generator" content="Hexo 3.9.0">
-    <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <title>Chic 安装文档 - Zfans&#39;s Blog</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Zfans&#39;s Blog">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  
+  
 
-    <meta name="description" content="Zfans's Blog">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
+  <meta name="description" content="Chic Theme       Chic,法语词意同’Elegant’         ## Introduction 介绍  优雅、功能全面、阅读友好的hexo主题。 Demo 演示 Demo site 作者的博客  Features 特点 恰到好处的留白，优雅却不简陋。 夜间模式主题一键切换。 多种代码高亮方案。 精心挑选的字体，最好的阅读体验。* 特别推荐 微软正黑 响应式适配移动端/桌面">
+<meta name="keywords" content="Zfans,zfans">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Chic 安装文档">
+<meta property="og:url" content="https://Zzzfans.github.io/2019/08/30/Chic/index.html">
+<meta property="og:site_name" content="Zfans&#39;s Blog">
+<meta property="og:description" content="Chic Theme       Chic,法语词意同’Elegant’         ## Introduction 介绍  优雅、功能全面、阅读友好的hexo主题。 Demo 演示 Demo site 作者的博客  Features 特点 恰到好处的留白，优雅却不简陋。 夜间模式主题一键切换。 多种代码高亮方案。 精心挑选的字体，最好的阅读体验。* 特别推荐 微软正黑 响应式适配移动端/桌面">
+<meta property="og:locale" content="en">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d006bd289aa325037.png">
+<meta property="og:image" content="https://img.shields.io/badge/Author-Sirice-blue.svg">
+<meta property="og:image" content="https://img.shields.io/badge/node.js-6.0%2B-43853d.svg?style=flat-square">
+<meta property="og:image" content="https://img.shields.io/badge/hexo-3.0+-0e83cd.svg?style=flat-square">
+<meta property="og:image" content="https://img.shields.io/badge/device-responsive-orange.svg">
+<meta property="og:image" content="https://img.shields.io/travis/viosey/hexo-theme-material.svg?style=flat-square">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a0850285252790.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a0856063661133.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a084e29cd40271.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a0855d28072392.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a085d115d16700.png">
+<meta property="og:image" content="https://i.loli.net/2019/06/12/5d00a085ec26284832.png">
+<meta property="og:image" content="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png">
+<meta property="og:updated_time" content="2019-08-30T08:37:26.972Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Chic 安装文档">
+<meta name="twitter:description" content="Chic Theme       Chic,法语词意同’Elegant’         ## Introduction 介绍  优雅、功能全面、阅读友好的hexo主题。 Demo 演示 Demo site 作者的博客  Features 特点 恰到好处的留白，优雅却不简陋。 夜间模式主题一键切换。 多种代码高亮方案。 精心挑选的字体，最好的阅读体验。* 特别推荐 微软正黑 响应式适配移动端/桌面">
+<meta name="twitter:image" content="https://i.loli.net/2019/06/12/5d006bd289aa325037.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  
+  <!--<link rel="stylesheet" href="/css/style.css?v=1581525598980">-->
 
-
-    <meta name="keywords" content="Zfans,zfans">
-
-
-<title>Chic 安装文档 | Zfans&#39;s Blog</title>
-
-
-
-    <link rel="icon" href="/Z.ico">
-
-
-
-
-    <!-- stylesheets list from _config.yml -->
-    
-    <link rel="stylesheet" href="/css/style.css">
-    
-
-
-
-    <!-- scripts list from _config.yml -->
-    
-    <script src="/js/script.js"></script>
-    
-    <script src="/js/tocbot.min.js"></script>
-    
-
-
-
-    
-    
-        
-    
-
-
+  
 </head>
 
-<body>
-
-    <div class="wrapper">
-        <header>
-    <nav class="navbar">
-        <div class="container">
-            <div class="navbar-header header-logo"><a href="/">Zfans&#39;s Blog</a></div>
-            <div class="menu navbar-right">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-                <input id="switch_default" type="checkbox" class="switch_default">
-                <label for="switch_default" class="toggleBtn"></label>
-            </div>
-
-        </div>
-    </nav>
-
-    
-    <nav class="navbar-mobile" id="nav-mobile">
-        <div class="container">
-            <div class="navbar-header">
-                <div>
-                    <a href="/">Zfans&#39;s Blog</a><a id="mobile-toggle-theme">·&nbsp;Light</a>
-                </div>
-                <div class="menu-toggle" onclick="mobileBtn()">&#9776; Menu</div>
-            </div>
-            <div class="menu" id="mobile-menu">
-                
-                    <a class="menu-item" href="/archives">Posts</a>
-                
-                    <a class="menu-item" href="/category">Categories</a>
-                
-                    <a class="menu-item" href="/tag">Tags</a>
-                
-                    <a class="menu-item" href="/about">About</a>
-                
-            </div>
-        </div>
-    </nav>
-
-</header>
-<script>
-    var mobileBtn = function f() {
-        var toggleMenu = document.getElementsByClassName("menu-toggle")[0];
-        var mobileMenu = document.getElementById("mobile-menu");
-        if(toggleMenu.classList.contains("active")){
-           toggleMenu.classList.remove("active")
-            mobileMenu.classList.remove("active")
-        }else{
-            toggleMenu.classList.add("active")
-            mobileMenu.classList.add("active")
-        }
-    }
-</script>
-
-        <div class="main">
-            <div class="container">
-    
-    
-        <div class="post-toc">
-    <div class="tocbot-list">
+<body class="mdui-drawer-body-left">
+  
+  <div id="nexmoe-background">
+    <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
+    <div class="mdui-appbar mdui-shadow-0">
+      <div class="mdui-toolbar">
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <div class="mdui-toolbar-spacer"></div>
+        <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
+        <a href="/" title="Zfans" class="mdui-btn mdui-btn-icon"><img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Zfans"></a>
+       </div>
     </div>
-    <div class="tocbot-list-menu">
-        <a class="tocbot-toc-expand" onclick="expand_toc()">Expand all</a>
-        <a onclick="go_top()">Back to top</a>
-        <a onclick="go_bottom()">Go to bottom</a>
+  </div>
+  <div id="nexmoe-header">
+      <div class="nexmoe-drawer mdui-drawer" id="drawer">
+    <div class="nexmoe-avatar mdui-ripple">
+        <a href="/" title="Zfans">
+            <img src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/avatar.png" alt="Zfans">
+        </a>
+    </div>
+    <div class="nexmoe-count">
+        <div><span>Articles</span>8</div>
+        <div><span>Tags</span>0</div>
+        <div><span>Categories</span>0</div>
+    </div>
+    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
+            <i class="mdui-list-item-icon nexmoefont icon-home"></i>
+            <div class="mdui-list-item-content">
+                回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/about.html" title="关于博客">
+            <i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+            <div class="mdui-list-item-content">
+                关于博客
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/PY.html" title="我的朋友">
+            <i class="mdui-list-item-icon nexmoefont icon-unorderedlist"></i>
+            <div class="mdui-list-item-content">
+                我的朋友
+            </div>
+        </a>
+        
+    </div>
+    <aside id="nexmoe-sidebar">
+  
+  <div class="nexmoe-widget-wrap">
+    <div class="nexmoe-widget nexmoe-search">
+        <form id="search_form" action_e="https://cn.bing.com/search?q=site:nexmoe.com" onsubmit="return search();">
+            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+        </form>
     </div>
 </div>
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Social</h3>
+    <div class="nexmoe-widget nexmoe-social">
+        <a class="mdui-ripple" href="https://space.bilibili.com/20238211" target="_blank" mdui-tooltip="{content: '哔哩哔哩'}" style="color: rgb(231, 106, 141);background-color: rgba(231, 106, 141, .15);">
+            <i class="nexmoefont icon-bilibili"></i>
+        </a><a class="mdui-ripple" href="https://github.com/nexmoe/" target="_blank" mdui-tooltip="{content: 'GitHub'}" style="color: rgb(25, 23, 23);background-color: rgba(25, 23, 23, .15);">
+            <i class="nexmoefont icon-github"></i>
+        </a>
+    </div>
+</div>
+  
+  
 
-<script>
-    document.ready(
-        function () {
-            tocbot.init({
-                tocSelector: '.tocbot-list',
-                contentSelector: '.post-content',
-                headingSelector: 'h1, h2, h3, h4, h5',
-                collapseDepth: 1,
-                orderedList: false,
-                scrollSmooth: true,
-            })
-        }
-    )
+  
+  
+  
+  
+  <div class="nexmoe-widget-wrap">
+    <h3 class="nexmoe-widget-title">Archive</h3>
+    <div class="nexmoe-widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/08/">August 2019</a></li></ul>
+    </div>
+  </div>
 
-    function expand_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 6,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "collapse_toc()");
-        b.innerHTML = "Collapse all"
-    }
 
-    function collapse_toc() {
-        var b = document.querySelector(".tocbot-toc-expand");
-        tocbot.init({
-            tocSelector: '.tocbot-list',
-            contentSelector: '.post-content',
-            headingSelector: 'h1, h2, h3, h4, h5',
-            collapseDepth: 1,
-            orderedList: false,
-            scrollSmooth: true,
-        });
-        b.setAttribute("onclick", "expand_toc()");
-        b.innerHTML = "Expand all"
-    }
-
-    function go_top() {
-        window.scrollTo(0, 0);
-    }
-
-    function go_bottom() {
-        window.scrollTo(0, document.body.scrollHeight);
-    }
-
-</script>
+  
+</aside>
+    <div class="nexmoe-copyright">
+        &copy; 2020 Zfans
+        Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+        & <a href="https://nexmoe.com/hexo-theme-nexmoe.html" target="_blank">Nexmoe</a>
+    </div>
+</div><!-- .nexmoe-drawer -->
+  </div>
+  <div id="nexmoe-content">
+    <div class="nexmoe-primary">
+        <div class="nexmoe-post">
+  
+      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+          <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Chic 安装文档" class="lazyload">
+          <h1>Chic 安装文档</h1>
+      </div>
+  
+  <div class="nexmoe-post-meta">
+    <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
+    <a><i class="nexmoefont icon-areachart"></i>1,264 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 6 分钟</a>
     
-
     
-    <article class="post-wrap">
-        <header class="post-header">
-            <h1 class="post-title">Chic 安装文档</h1>
-            
-                <div class="post-meta">
-                    
-                        Author: <a itemprop="author" rel="author" href="/">Zfans</a>
-                    
+    
+  </div>
 
-                    
-                        <span class="post-time">
-                        Date: <a href="#">2019-08-30&nbsp;&nbsp;14:36:24</a>
-                        </span>
-                    
-                    
-                </div>
-            
-        </header>
+  <div class="nexmoe-post-right">
+    
+  </div>
 
-        <div class="post-content">
-            <h1 align="center"><a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic Theme</a></h1>
+  <article>
+    <h1 align="center"><a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic Theme</a></h1>
 
 <p align="center">
-<img src="https://i.loli.net/2019/06/12/5d006bd289aa325037.png" alt="Chic theme">
+<img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d006bd289aa325037.png" alt="Chic theme" class="lazyload">
 </p>
 
 <blockquote>
@@ -288,83 +253,60 @@
 <li><p>常见问题待补充……    </p>
 </li>
 </ol>
-<h2 id="Gallary-图片展示"><a href="#Gallary-图片展示" class="headerlink" title="Gallary 图片展示"></a>Gallary 图片展示</h2><p><img src="https://i.loli.net/2019/06/12/5d00a0850285252790.png" alt="screely-1560228577821.png"><br><img src="https://i.loli.net/2019/06/12/5d00a0856063661133.png" alt="screely-1560228791041.png"><br><img src="https://i.loli.net/2019/06/12/5d00a084e29cd40271.png" alt="screely-1560228621288.png"><br><img src="https://i.loli.net/2019/06/12/5d00a0855d28072392.png" alt="screely-1560228761180.png"></p>
-<p><img src="https://i.loli.net/2019/06/12/5d00a085d115d16700.png" alt="smartmockups_jwrd4ru3.png"></p>
-<p><img src="https://i.loli.net/2019/06/12/5d00a085ec26284832.png" alt="smartmockups_jwrd9y4r.png"></p>
+<h2 id="Gallary-图片展示"><a href="#Gallary-图片展示" class="headerlink" title="Gallary 图片展示"></a>Gallary 图片展示</h2><p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0850285252790.png" alt="screely-1560228577821.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0856063661133.png" alt="screely-1560228791041.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a084e29cd40271.png" alt="screely-1560228621288.png" class="lazyload"><br><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a0855d28072392.png" alt="screely-1560228761180.png" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a085d115d16700.png" alt="smartmockups_jwrd4ru3.png" class="lazyload"></p>
+<p><img data-sizes="auto" data-src="https://i.loli.net/2019/06/12/5d00a085ec26284832.png" alt="smartmockups_jwrd9y4r.png" class="lazyload"></p>
 <h2 id="LICENSE-开源许可"><a href="#LICENSE-开源许可" class="headerlink" title="LICENSE 开源许可"></a>LICENSE 开源许可</h2><p>Chic © <a href="https://github.com/Siricee" target="_blank" rel="noopener">@Sirice</a></p>
 <p><a rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png"></a><br>This work is licensed under a <a rel="noopener" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.</p>
 
-        </div>
-
-        
-            <section class="post-copyright">
-                
-                    <p class="copyright-item">
-                        <span>Author:</span>
-                        <span>Zfans</span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>Permalink:</span>
-                        <span><a href="https://Zzzfans.github.io/2019/08/30/Chic/">https://Zzzfans.github.io/2019/08/30/Chic/</a></span>
-                    </p>
-                
-                
-                    <p class="copyright-item">
-                        <span>License:</span>
-                        <span>Copyright (c) 2019 <a href="http://creativecommons.org/licenses/by-nc/4.0/">CC-BY-NC-4.0</a> LICENSE</span>
-                    </p>
-                
-                
-                     <p class="copyright-item">
-                         <span>Slogan:</span>
-                         <span>Do you believe in <strong>fate<strong> ?</strong></strong></span>
-                     </p>
-                
-
-            </section>
-        
-        <section class="post-tags">
-            <div>
-                <span>Tag(s):</span>
-                <span class="tag">
-                    
-                </span>
-            </div>
-            <div>
-                <a href="javascript:window.history.back();">back</a>
-                <span>· </span>
-                <a href="/">home</a>
-            </div>
-        </section>
-        <section class="post-nav">
-            
-                <a class="prev" rel="prev" href="/2019/08/30/hexo-github搭建博客/">Hexo+GitHub 搭建博客</a>
-            
-            
-            <a class="next" rel="next" href="/2019/08/27/hello-world/">Hello World</a>
-            
-        </section>
-
-
-    </article>
-</div>
- 
-        </div>
-
-        <footer id="footer" class="footer">
-    <div class="copyright">
-        <span>© Zfans | Powered by <a href="https://hexo.io" target="_blank">Hexo</a> & <a href="https://github.com/Siricee/hexo-theme-Chic" target="_blank">Chic</a></span>
-    </div>
-</footer>
-
-    </div>
-
+  </article>
+  
     
-        <script type="text/javascript" color="0,0,0" opacity="0.3" zindex="-2" count="99" src="/js/canvas-nest.js"></script>
-        
-        
+<div class="nexmoe-post-copyright">
+<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
+<strong>Author：</strong>Zfans<br>
+<strong>Link：</strong><a href="https://Zzzfans.github.io/2019/08/30/Chic/" title="https://Zzzfans.github.io/2019/08/30/Chic/" target="_blank" rel="noopener">https://Zzzfans.github.io/2019/08/30/Chic/</a><br>
+
+  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
+
+</div>
+
+
+  
+  <section class="nexmoe-comment">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.css">
+<div id="gitalk"></div>
+<script src="https://cdn.jsdelivr.net/npm/gitalk@1.5.0/dist/gitalk.min.js"></script>
+<script type="text/javascript">
+    var gitalk = new Gitalk({
+        clientID: '80b2453b6d5f37ad6225',
+        clientSecret: '43e99fa852795c9a7b3eb924b2558c64b84bbdeb',
+        id: window.location.pathname,
+        repo: 'nexmoe.github.io',
+        owner: 'nexmoe',
+        admin: 'nexmoe'
+    })
+    gitalk.render('gitalk')
+</script>
+</section>
+</div>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<!--<script src="/js/app.js?v=1581525598983"></script>-->
+
+
+    <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
+
+
+
+  
+
+
+
+
+
 </body>
 
 </html>
