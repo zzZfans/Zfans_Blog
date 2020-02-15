@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
   <title>Qt 实现多级菜单 - Zfans&#39; Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="Zfans&#39; Blog">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
 
-  <link rel="shortcut icon" href="http://q5jq9hqq6.bkt.clouddn.com/Z.ico" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
   <meta name="description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。 下图就是我们最常见的Windows系统多级菜单：  Qt实现（多级）菜单在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由">
 <meta name="keywords" content="Qt">
 <meta property="og:type" content="article">
@@ -27,9 +26,11 @@
 <meta name="twitter:title" content="Qt 实现多级菜单">
 <meta name="twitter:description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。 下图就是我们最常见的Windows系统多级菜单：  Qt实现（多级）菜单在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由">
 <meta name="twitter:image" content="https://img-blog.csdn.net/20171122142111936?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGVhdmVuX0V2aWw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581753806569">-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1581757532847">
 
   
 </head>
@@ -40,10 +41,10 @@
     <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
         <div class="mdui-toolbar-spacer"></div>
         <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg" alt="Zfans."></a>
+        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg"></a>
        </div>
     </div>
   </div>
@@ -59,12 +60,19 @@
         <div><span>Tags</span>4</div>
         <div><span>Categories</span>0</div>
     </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
         <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">
                 回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
             </div>
         </a>
         
@@ -82,13 +90,13 @@
             </div>
         </a>
         
-    </div>
+    </ul>
     <aside id="nexmoe-sidebar">
   
   <div class="nexmoe-widget-wrap">
     <div class="nexmoe-widget nexmoe-search">
         <form id="search_form" action_e="https://cn.bing.com/search?q=" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            <input id="search_value" name="q" type="search" placeholder="Search">
         </form>
     </div>
 </div>
@@ -170,15 +178,15 @@
     <div class="nexmoe-primary">
         <div class="nexmoe-post">
   
-      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+      <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
           <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Qt 实现多级菜单" class="lazyload">
           <h1>Qt 实现多级菜单</h1>
       </div>
   
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
-    <a><i class="nexmoefont icon-areachart"></i>642 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
+    <a><i class="nexmoefont icon-areachart"></i>600 字</a>
+    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 2 分钟</a>
     
     
       <a class="nexmoefont icon-tag-fill -link" href="/tags/Qt/">Qt</a>
@@ -203,14 +211,50 @@
 <p>下图就是我们最常见的Windows系统多级菜单：</p>
 <p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20171122142111936?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGVhdmVuX0V2aWw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload"></p>
 <h1 id="Qt实现（多级）菜单"><a href="#Qt实现（多级）菜单" class="headerlink" title="Qt实现（多级）菜单"></a>Qt实现（多级）菜单</h1><p>在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由一个图标和一段文字描述组成。要先右键弹出菜单我们需要重写contextMenuEvent(QContextMenuEvent *event)事件，如果是按钮菜单等关联信号槽，在槽函数弹出菜单即可。</p>
-<h1 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h1><figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::createMenu()</span><br><span class="line">&#123;</span><br><span class="line">    m_menu1 = <span class="keyword">new</span> QMenu();</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    QMenu* menu2 = m_menu1-&gt;addMenu(<span class="string">"2_0"</span>);</span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    QMenu* menu3 = menu2-&gt;addMenu(<span class="string">"3_0"</span>);</span><br><span class="line">    menu2-&gt;addSeparator();</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_1"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu3-&gt;addAction(<span class="string">"3_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_2"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">    menu2-&gt;addAction(<span class="string">"2_3"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line"> </span><br><span class="line">    m_menu1-&gt;addSeparator();</span><br><span class="line"> </span><br><span class="line">    m_menu1-&gt;addAction(<span class="string">"1_4"</span>,<span class="keyword">this</span>,SLOT(actionsSlot()));</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="源码分析"><a href="#源码分析" class="headerlink" title="源码分析"></a>源码分析</h1><pre><code class="c++">void Widget::createMenu()
+{
+    m_menu1 = new QMenu();
+    m_menu1-&gt;addAction(&quot;1_1&quot;,this,SLOT(actionsSlot()));
+    m_menu1-&gt;addAction(&quot;1_2&quot;,this,SLOT(actionsSlot()));
+    m_menu1-&gt;addAction(&quot;1_3&quot;,this,SLOT(actionsSlot()));
 
+    QMenu* menu2 = m_menu1-&gt;addMenu(&quot;2_0&quot;);
+    menu2-&gt;addAction(&quot;2_1&quot;,this,SLOT(actionsSlot()));
+
+    QMenu* menu3 = menu2-&gt;addMenu(&quot;3_0&quot;);
+    menu2-&gt;addSeparator();
+    menu3-&gt;addAction(&quot;3_1&quot;,this,SLOT(actionsSlot()));
+    menu3-&gt;addAction(&quot;3_2&quot;,this,SLOT(actionsSlot()));
+    menu3-&gt;addAction(&quot;3_3&quot;,this,SLOT(actionsSlot()));
+
+    menu2-&gt;addAction(&quot;2_2&quot;,this,SLOT(actionsSlot()));
+    menu2-&gt;addAction(&quot;2_3&quot;,this,SLOT(actionsSlot()));
+
+    m_menu1-&gt;addSeparator();
+
+    m_menu1-&gt;addAction(&quot;1_4&quot;,this,SLOT(actionsSlot()));
+}</code></pre>
 <p>createMenu()函数中创建了三个菜单，通过addAction()函数添加小项目到每个菜单中,addAction()同时提供关联到对象槽函数的重载版本，这样就可以在添加的同时也关联好槽函数，addMenu()给菜单添加下级菜单，当鼠标滑到addMenu()添加的项目是会自动弹出下级菜单。addSeparator()在每个QAction之间添加分离器。通过addAction()和addMenu()的结合使用就可以构造看起来很强大的多级菜单，再通过实现它们的槽函数我们就可以实现每个QAction被点击时要响应的事件。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::actionsSlot()</span><br><span class="line">&#123;</span><br><span class="line">    QAction *action = (QAction*)sender();</span><br><span class="line">    QString actionText = action-&gt;text();</span><br><span class="line"> </span><br><span class="line">    qDebug()&lt;&lt;actionText&lt;&lt;<span class="string">"triggerred!"</span>&lt;&lt;<span class="built_in">endl</span>;</span><br><span class="line"> </span><br><span class="line">    <span class="keyword">if</span>(<span class="string">"1_1"</span> == actionText) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125; <span class="keyword">else</span> <span class="keyword">if</span>(<span class="string">"1_2"</span> == actionText) &#123;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">    &#125;</span><br><span class="line">        <span class="comment">//...</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<pre><code class="c++">void Widget::actionsSlot()
+{
+    QAction *action = (QAction*)sender();
+    QString actionText = action-&gt;text();
 
+    qDebug()&lt;&lt;actionText&lt;&lt;&quot;triggerred!&quot;&lt;&lt;endl;
+
+    if(&quot;1_1&quot; == actionText) {
+        //...
+    } else if(&quot;1_2&quot; == actionText) {
+        //...
+    }
+        //...
+}</code></pre>
 <p>该槽函数处理QAction点击的时候要处理的事情。通过sender()取得发送信号的对象，再取得QAction的属性就可以在代码逻辑中分别处理不同的QAction该处理的事情。</p>
-<figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">void</span> Widget::contextMenuEvent(QContextMenuEvent *event)</span><br><span class="line">&#123;</span><br><span class="line">    m_menu1-&gt;exec(QCursor::pos());</span><br><span class="line">    event-&gt;accept();</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
+<pre><code class="c++">void Widget::contextMenuEvent(QContextMenuEvent *event)
+{
+    m_menu1-&gt;exec(QCursor::pos());
+    event-&gt;accept();
+}</code></pre>
 <p>重写contextMenuEvent()事件用于处理鼠标右键事件，但右击鼠标时，在鼠标点击的位置弹出菜单。</p>
 <h1 id="运行截图"><a href="#运行截图" class="headerlink" title="运行截图"></a>运行截图</h1><p><img data-sizes="auto" data-src="https://img-blog.csdn.net/20171122145014050?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvSGVhdmVuX0V2aWw=/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center" alt="img" class="lazyload"></p>
 <p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/heaven_evil/article/details/78601478" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
@@ -246,9 +290,12 @@
 </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581753806574"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+<script src="/js/app.js?v=1581757532852"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
   <title>Hexo+GitHub 搭建博客 - Zfans&#39; Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="Zfans&#39; Blog">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
 
-  <link rel="shortcut icon" href="http://q5jq9hqq6.bkt.clouddn.com/Z.ico" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
   <meta name="description" content="前言好的学习习惯就是随手记录学习历程，随手记录一下最近刚学习的用Hexo+GitHub搭建博客的过程。小白一个，可提建议，勿喷~ 步骤1.安装Nodejs在Node官网下载LTS版本，然后一路next进行安装，我安装到了C盘。 2.安装GitDownloadGit，一般可以一路next下去，最后可在cmd输入Git判断是否安装正常。 3.注册GitHub账号并配置SSH新手注册时一定要记好用户名、">
 <meta name="keywords" content="博客">
 <meta property="og:type" content="article">
@@ -29,9 +28,11 @@
 <meta name="twitter:title" content="Hexo+GitHub 搭建博客">
 <meta name="twitter:description" content="前言好的学习习惯就是随手记录学习历程，随手记录一下最近刚学习的用Hexo+GitHub搭建博客的过程。小白一个，可提建议，勿喷~ 步骤1.安装Nodejs在Node官网下载LTS版本，然后一路next进行安装，我安装到了C盘。 2.安装GitDownloadGit，一般可以一路next下去，最后可在cmd输入Git判断是否安装正常。 3.注册GitHub账号并配置SSH新手注册时一定要记好用户名、">
 <meta name="twitter:image" content="https://img-blog.csdnimg.cn/20190318192123157.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581753806600">-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1581757532884">
 
   
 </head>
@@ -42,10 +43,10 @@
     <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
         <div class="mdui-toolbar-spacer"></div>
         <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg" alt="Zfans."></a>
+        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg"></a>
        </div>
     </div>
   </div>
@@ -61,12 +62,19 @@
         <div><span>Tags</span>4</div>
         <div><span>Categories</span>0</div>
     </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
         <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">
                 回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
             </div>
         </a>
         
@@ -84,13 +92,13 @@
             </div>
         </a>
         
-    </div>
+    </ul>
     <aside id="nexmoe-sidebar">
   
   <div class="nexmoe-widget-wrap">
     <div class="nexmoe-widget nexmoe-search">
         <form id="search_form" action_e="https://cn.bing.com/search?q=" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            <input id="search_value" name="q" type="search" placeholder="Search">
         </form>
     </div>
 </div>
@@ -172,14 +180,14 @@
     <div class="nexmoe-primary">
         <div class="nexmoe-post">
   
-      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+      <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
           <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="Hexo+GitHub 搭建博客" class="lazyload">
           <h1>Hexo+GitHub 搭建博客</h1>
       </div>
   
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月30日</a>
-    <a><i class="nexmoefont icon-areachart"></i>783 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>774 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 3 分钟</a>
     
     
@@ -212,9 +220,16 @@
 <p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/2019031919384728.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L1NPU1BfTE0=,size_16,color_FFFFFF,t_70" alt="repo 值" class="lazyload"></p>
 <p><img data-sizes="auto" data-src="https://img-blog.csdnimg.cn/20190319193953250.png" alt="修改结果" class="lazyload"></p>
 <p>其他内容可自行修改（如title、keywords、author等），<em>注意：_config.yml文件里冒号后面都有一个空格</em>。每次修改后记得保存！接下来在3hsaBlog文件下cmd依次执行以下代码：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br><span class="line"></span><br><span class="line">hexo g</span><br><span class="line"></span><br><span class="line">hexo d</span><br><span class="line"> / /接下来会提示分别输入以下代码</span><br><span class="line">git config --global uesr.email &quot;your邮箱&quot;</span><br><span class="line"></span><br><span class="line">git config --global uesr.name &quot;github用户名&quot;</span><br></pre></td></tr></table></figure>
+<pre><code>npm install hexo-deployer-git --save
 
-<p>执行成功会跳出GitHub的login框，那就登陆吧，如果不对，可能会再次在命令行提示输入，登陆成功即表示部署成功，现在就可以在浏览器输入<code>username.github.io</code>访问自己的博客了。</p>
+hexo g
+
+hexo d
+ / /接下来会提示分别输入以下代码
+git config --global uesr.email &quot;your邮箱&quot;
+
+git config --global uesr.name &quot;github用户名&quot;
+</code></pre><p>执行成功会跳出GitHub的login框，那就登陆吧，如果不对，可能会再次在命令行提示输入，登陆成功即表示部署成功，现在就可以在浏览器输入<code>username.github.io</code>访问自己的博客了。</p>
 <h3 id="续"><a href="#续" class="headerlink" title="续"></a>续</h3><p>搭建好的博客默认主题为landscape，一般不会有人喜欢，可在<a href="https://hexo.io/themes" target="_blank" rel="noopener">Themes</a>里选择自己喜欢的主题下载或克隆进行修改完善。<br><em>发布文章的步骤</em>：可在CDSN用Markdown编辑器编写，导出为Markdown文件，将生成的.md文件放在自己博客文件夹下的source–&gt;_post文件夹里，然后在自己博客文件右击进入Git bash，执行hexo g、hexo d，就上传好了，可以hexo s先在本地浏览一下，再用网址访问，自我感觉这样更新快一点。用来编写.md文件的编辑器还有很多，可在度娘求知。</p>
 <p>版权声明：本文为博主原创文章，遵循<a href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank" rel="noopener"> CC 4.0 BY-SA </a>版权协议，转载请附上<a href="https://blog.csdn.net/SOSP_LM/article/details/88649316" target="_blank" rel="noopener">原文出处链接</a>和本声明。</p>
 
@@ -249,9 +264,12 @@
 </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581753806607"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+<script src="/js/app.js?v=1581757532888"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>

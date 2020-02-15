@@ -1,17 +1,16 @@
 <!DOCTYPE html>
-
-<html lang="en">
+<html>
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
   <title>xrdp 方式 windows 10 连接 ubuntu 18.04 - Zfans&#39; Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="Zfans&#39; Blog">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   
   
 
-  <link rel="shortcut icon" href="http://q5jq9hqq6.bkt.clouddn.com/Z.ico" type="image/png">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/png">
   <meta name="description" content="你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。 我这边因为需要vmplayer这个软件，此软件一定需要一个gui界面才能启动，所以安装了桌面版的ubuntu，但是远程维护的话，就需要用到远程桌面了。 xrdp vs vnc vs …xrdp是原生方案，兼容性是最好的，也不需要太多额外的软件支持。其他的">
 <meta name="keywords" content="Linux">
 <meta property="og:type" content="article">
@@ -24,9 +23,11 @@
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="xrdp 方式 windows 10 连接 ubuntu 18.04">
 <meta name="twitter:description" content="你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。 我这边因为需要vmplayer这个软件，此软件一定需要一个gui界面才能启动，所以安装了桌面版的ubuntu，但是远程维护的话，就需要用到远程桌面了。 xrdp vs vnc vs …xrdp是原生方案，兼容性是最好的，也不需要太多额外的软件支持。其他的">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/css/style.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1581753806551">-->
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
+  <link rel="stylesheet" href="/css/style.css?v=1581757532839">
 
   
 </head>
@@ -37,10 +38,10 @@
     <div class="nexmoe-bg" style="background-image: url(https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg)"></div>
     <div class="mdui-appbar mdui-shadow-0">
       <div class="mdui-toolbar">
-        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon mdui-ripple"><i class="mdui-icon nexmoefont icon-menu">menu</i></a>
+        <a mdui-drawer="{target: '#drawer', swipe: true}" title="menu" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">menu</i></a>
         <div class="mdui-toolbar-spacer"></div>
         <!--<a href="javascript:;" class="mdui-btn mdui-btn-icon"><i class="mdui-icon material-icons">search</i></a>-->
-        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg" alt="Zfans."></a>
+        <a href="/" title="Zfans." class="mdui-btn mdui-btn-icon"><img src="http://q5jq9hqq6.bkt.clouddn.com/%E5%A4%B4%E5%83%8F.jpg"></a>
        </div>
     </div>
   </div>
@@ -56,12 +57,19 @@
         <div><span>Tags</span>4</div>
         <div><span>Categories</span>0</div>
     </div>
-    <div class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
+    <ul class="nexmoe-list mdui-list" mdui-collapse="{accordion: true}">
         
         <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/" title="回到首页">
             <i class="mdui-list-item-icon nexmoefont icon-home"></i>
             <div class="mdui-list-item-content">
                 回到首页
+            </div>
+        </a>
+        
+        <a class="nexmoe-list-item mdui-list-item mdui-ripple" href="/archives" title="文章归档">
+            <i class="mdui-list-item-icon nexmoefont icon-container"></i>
+            <div class="mdui-list-item-content">
+                文章归档
             </div>
         </a>
         
@@ -79,13 +87,13 @@
             </div>
         </a>
         
-    </div>
+    </ul>
     <aside id="nexmoe-sidebar">
   
   <div class="nexmoe-widget-wrap">
     <div class="nexmoe-widget nexmoe-search">
         <form id="search_form" action_e="https://cn.bing.com/search?q=" onsubmit="return search();">
-            <label><input id="search_value" name="q" type="search" placeholder="Search"></label>
+            <input id="search_value" name="q" type="search" placeholder="Search">
         </form>
     </div>
 </div>
@@ -167,14 +175,14 @@
     <div class="nexmoe-primary">
         <div class="nexmoe-post">
   
-      <div class="nexmoe-post-cover" style="padding-bottom: 66.66666666666666%;"> 
+      <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 66.66666666666666%;"> 
           <img data-src="https://cdn.jsdelivr.net/gh/nexmoe/nexmoe.github.io@latest/images/cover/5c3aec85a4343.jpg" data-sizes="auto" alt="xrdp 方式 windows 10 连接 ubuntu 18.04" class="lazyload">
           <h1>xrdp 方式 windows 10 连接 ubuntu 18.04</h1>
       </div>
   
   <div class="nexmoe-post-meta">
     <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
-    <a><i class="nexmoefont icon-areachart"></i>284 字</a>
+    <a><i class="nexmoefont icon-areachart"></i>281 字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
     
     
@@ -200,13 +208,10 @@
 <p>我这边因为需要vmplayer这个软件，此软件一定需要一个gui界面才能启动，所以安装了桌面版的ubuntu，但是远程维护的话，就需要用到远程桌面了。</p>
 <h2 id="xrdp-vs-vnc-vs-…"><a href="#xrdp-vs-vnc-vs-…" class="headerlink" title="xrdp vs vnc vs …"></a>xrdp vs vnc vs …</h2><p>xrdp是原生方案，兼容性是最好的，也不需要太多额外的软件支持。其他的请自行google。</p>
 <h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p>仅需要</p>
-<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo apt install xrdp</span><br></pre></td></tr></table></figure>
-
-<h2 id="编辑配置"><a href="#编辑配置" class="headerlink" title="编辑配置"></a>编辑配置</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">sudo vim /etc/xrdp/startwm.sh</span><br></pre></td></tr></table></figure>
-
+<pre><code class="bash">sudo apt install xrdp</code></pre>
+<h2 id="编辑配置"><a href="#编辑配置" class="headerlink" title="编辑配置"></a>编辑配置</h2><pre><code class="text">sudo vim /etc/xrdp/startwm.sh</code></pre>
 <p>把最下面的test和exec两行注释掉，添加一行</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">gnome-session</span><br></pre></td></tr></table></figure>
-
+<pre><code class="text">gnome-session</code></pre>
 <h2 id="重新启动ubuntu，不要登录！"><a href="#重新启动ubuntu，不要登录！" class="headerlink" title="重新启动ubuntu，不要登录！"></a>重新启动ubuntu，不要登录！</h2><h2 id="windows远程桌面连接"><a href="#windows远程桌面连接" class="headerlink" title="windows远程桌面连接"></a>windows远程桌面连接</h2><ol>
 <li><p>windows打开远程桌面输入ubuntu主机ip或者主机名</p>
 </li>
@@ -249,9 +254,12 @@
 </div>
     </div>
   </div>
-  <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1581753806556"></script>-->
+<script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
+
+<script src="/js/app.js?v=1581757532845"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
