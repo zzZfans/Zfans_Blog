@@ -11,26 +11,26 @@
   
 
   <link rel="shortcut icon" href="http://q5jq9hqq6.bkt.clouddn.com/Z.ico" type="image/png">
-  <meta name="description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。 下图就是我们最常见的Windows系统多级菜单：  Qt实现（多级）菜单在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由">
+  <meta name="description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。">
 <meta name="keywords" content="Qt">
 <meta property="og:type" content="article">
 <meta property="og:title" content="Qt 实现多级菜单">
 <meta property="og:url" content="https://Zzzfans.github.io/2019/08/31/Qt实现多级菜单/index.html">
 <meta property="og:site_name" content="Zfans&#39; Blog">
-<meta property="og:description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。 下图就是我们最常见的Windows系统多级菜单：  Qt实现（多级）菜单在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由">
+<meta property="og:description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:image" content="http://q5jq9hqq6.bkt.clouddn.com/Qt%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95%2001.png">
 <meta property="og:image" content="http://q5jq9hqq6.bkt.clouddn.com/Qt%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95%2002.png">
-<meta property="og:updated_time" content="2020-02-18T06:20:50.178Z">
+<meta property="og:updated_time" content="2020-02-20T08:53:56.271Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Qt 实现多级菜单">
-<meta name="twitter:description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。 下图就是我们最常见的Windows系统多级菜单：  Qt实现（多级）菜单在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由">
+<meta name="twitter:description" content="前言在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。">
 <meta name="twitter:image" content="http://q5jq9hqq6.bkt.clouddn.com/Qt%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95%2001.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1582089957396">
+  <link rel="stylesheet" href="/css/style.css?v=1582189563782">
 
   
 </head>
@@ -261,7 +261,7 @@
   </div>
 
   <article>
-    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。</p>
+    <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。<a id="more"></a></p>
 <p>下图就是我们最常见的Windows系统多级菜单：</p>
 <p><img data-sizes="auto" data-src="http://q5jq9hqq6.bkt.clouddn.com/Qt%20%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95%2001.png" alt="img" class="lazyload"></p>
 <h1 id="Qt实现（多级）菜单"><a href="#Qt实现（多级）菜单" class="headerlink" title="Qt实现（多级）菜单"></a>Qt实现（多级）菜单</h1><p>在Qt中通过QMenu和QAction就可以实现这些菜单，QMenu就是上图中我们看到的三个级联菜单，每个QMenu里面的小项目就是一个QAction，一个QAction由一个图标和一段文字描述组成。要先右键弹出菜单我们需要重写contextMenuEvent(QContextMenuEvent *event)事件，如果是按钮菜单等关联信号槽，在槽函数弹出菜单即可。</p>
@@ -347,7 +347,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
-<script src="/js/app.js?v=1582089957406"></script>
+<script src="/js/app.js?v=1582189563793"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
