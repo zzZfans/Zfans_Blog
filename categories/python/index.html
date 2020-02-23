@@ -3,7 +3,7 @@
 
 <head><meta name="generator" content="Hexo 3.9.0">
   
-  <title>xrdp 方式 windows 10 连接 ubuntu 18.04 - Zfans&#39; Blog</title>
+  <title>分类：python - Zfans&#39; Blog</title>
   <meta charset="UTF-8">
   <meta name="description" content="Zfans&#39; Blog">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -11,23 +11,22 @@
   
 
   <link rel="shortcut icon" href="http://q5jq9hqq6.bkt.clouddn.com/Z.ico" type="image/png">
-  <meta name="description" content="你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。">
-<meta name="keywords" content="Linux">
-<meta property="og:type" content="article">
-<meta property="og:title" content="xrdp 方式 windows 10 连接 ubuntu 18.04">
-<meta property="og:url" content="https://Zzzfans.github.io/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/index.html">
+  <meta name="description" content="Zfans&apos; Blog">
+<meta name="keywords" content="Zfans,zfans">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Zfans&#39; Blog">
+<meta property="og:url" content="https://Zzzfans.github.io/categories/python/index.html">
 <meta property="og:site_name" content="Zfans&#39; Blog">
-<meta property="og:description" content="你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。">
+<meta property="og:description" content="Zfans&apos; Blog">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2020-02-20T08:53:26.789Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xrdp 方式 windows 10 连接 ubuntu 18.04">
-<meta name="twitter:description" content="你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。">
+<meta name="twitter:title" content="Zfans&#39; Blog">
+<meta name="twitter:description" content="Zfans&apos; Blog">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/css/mdui.min.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/highlight.js@9.15.8/styles/atom-one-dark.css">
   
   <link rel="stylesheet" href="//at.alicdn.com/t/font_1038733_0xvrvpg9c0r.css">
-  <link rel="stylesheet" href="/css/style.css?v=1582460385038">
+  <link rel="stylesheet" href="/css/style.css?v=1582460385333">
 
   
 </head>
@@ -232,85 +231,38 @@
   </div>
   <div id="nexmoe-content">
     <div class="nexmoe-primary">
-        <div class="nexmoe-post">
-  
-      <div class="nexmoe-post-cover mdui-ripple" style="padding-bottom: 56.25%;"> 
-          <img data-src="http://q5jq9hqq6.bkt.clouddn.com/%E6%B0%B4%E4%B8%8B%E5%A5%B3%E5%AD%A9%20%E9%B1%BC%20%E6%B5%B7%E9%BE%9F%20%E5%94%AF%E7%BE%8E%E6%84%8F%E5%A2%83%201920%201080.jpg" data-sizes="auto" alt="xrdp 方式 windows 10 连接 ubuntu 18.04" class="lazyload">
-          <h1>xrdp 方式 windows 10 连接 ubuntu 18.04</h1>
-      </div>
-  
-  <div class="nexmoe-post-meta">
-    <a><i class="nexmoefont icon-calendar-fill"></i>2019年08月31日</a>
-    <a><i class="nexmoefont icon-areachart"></i>281 字</a>
-    <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+        <style>
+    #nexmoe-content .nexmoe-archives .nexmoe-post .nexmoe-post-cover {
+        max-height: 75px;
+    }
+</style>
+<section class="nexmoe-archives">
     
-      <a class="nexmoefont icon-appstore-fill -link" href="/categories/Linux/">Linux</a>
-    
-    
-      <a class="nexmoefont icon-tag-fill -link" href="/tags/Linux/">Linux</a>
-    
-    
-  </div>
-
-  <div class="nexmoe-post-right">
-    
-      <div class="nexmoe-fixed">
-        <div class="nexmoe-valign">
-            <div class="nexmoe-toc">
-                <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#xrdp-vs-vnc-vs-…"><span class="toc-number">1.</span> <span class="toc-text">xrdp vs vnc vs …</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#软件安装"><span class="toc-number">2.</span> <span class="toc-text">软件安装</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#编辑配置"><span class="toc-number">3.</span> <span class="toc-text">编辑配置</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#重新启动ubuntu，不要登录！"><span class="toc-number">4.</span> <span class="toc-text">重新启动ubuntu，不要登录！</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#windows远程桌面连接"><span class="toc-number">5.</span> <span class="toc-text">windows远程桌面连接</span></a></li></ol>
-            </div>
+    <div class="nexmoe-post">
+        <a href="/2020/02/23/解决pip更新问题/">
+            
+                <div class="nexmoe-post-cover mdui-ripple"> 
+                    <img data-src="http://q5jq9hqq6.bkt.clouddn.com/%E6%B5%B7%E8%BE%B9%E7%99%BD%E8%89%B2%E5%86%9B%E8%A3%85%E5%88%B6%E6%9C%8D%E7%BE%8E%E5%A5%B3%20%E9%BB%91%E8%89%B2%E4%B8%9D%E8%A2%9C%20%E9%AB%98%E6%B8%85%E5%8A%A8%E6%BC%AB%E5%A3%81%E7%BA%B8%281920x1080%29.jpg" data-sizes="auto" alt="解决pip更新问题" class="lazyload">
+                    <h1>解决pip更新问题</h1>
+                </div>
+            
+        </a>
+        <div class="nexmoe-post-meta">
+            <a><i class="nexmoefont icon-calendar-fill"></i>2020年02月23日</a>
+            <a><i class="nexmoefont icon-areachart"></i>40 字</a>
+            <a><i class="nexmoefont icon-time-circle-fill"></i>大概 1 分钟</a>
+            
+                <a class="nexmoefont icon-appstore-fill -link" href="/categories/python/">python</a>
+            
+            
+                <a class="nexmoefont icon-tag-fill -link" href="/tags/python/">python</a>
+            
         </div>
-      </div>
+        <div style="height: 50px;"></div>
+    </div>
     
-  </div>
-
-  <article>
-    <p>你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。<a id="more"></a></p>
-<p>我这边因为需要vmplayer这个软件，此软件一定需要一个gui界面才能启动，所以安装了桌面版的ubuntu，但是远程维护的话，就需要用到远程桌面了。</p>
-<h2 id="xrdp-vs-vnc-vs-…"><a href="#xrdp-vs-vnc-vs-…" class="headerlink" title="xrdp vs vnc vs …"></a>xrdp vs vnc vs …</h2><p>xrdp是原生方案，兼容性是最好的，也不需要太多额外的软件支持。其他的请自行google。</p>
-<h2 id="软件安装"><a href="#软件安装" class="headerlink" title="软件安装"></a>软件安装</h2><p>仅需要</p>
-<pre><code class="bash">sudo apt install xrdp</code></pre>
-<h2 id="编辑配置"><a href="#编辑配置" class="headerlink" title="编辑配置"></a>编辑配置</h2><pre><code class="text">sudo vim /etc/xrdp/startwm.sh</code></pre>
-<p>把最下面的test和exec两行注释掉，添加一行</p>
-<pre><code class="text">gnome-session</code></pre>
-<h2 id="重新启动ubuntu，不要登录！"><a href="#重新启动ubuntu，不要登录！" class="headerlink" title="重新启动ubuntu，不要登录！"></a>重新启动ubuntu，不要登录！</h2><h2 id="windows远程桌面连接"><a href="#windows远程桌面连接" class="headerlink" title="windows远程桌面连接"></a>windows远程桌面连接</h2><ol>
-<li><p>windows打开远程桌面输入ubuntu主机ip或者主机名</p>
-</li>
-<li><p>选择xorg，输入用户名密码</p>
-</li>
-<li><p>会提示几次授权修改主机的颜色设置什么的，都可以cancel掉，然后即可登陆成功</p>
-</li>
-<li><p><a href="https://zhuanlan.zhihu.com/p/40937988" target="_blank" rel="noopener">原文链接</a></p>
-</li>
-</ol>
-
-  </article>
-  
-    
-<div class="nexmoe-post-copyright">
-<i class="mdui-list-item-icon nexmoefont icon-info-circle"></i>
-<strong>本文作者：</strong>Zfans.<br>
-<strong>本文链接：</strong><a href="https://Zzzfans.github.io/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/" title="https://Zzzfans.github.io/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/" target="_blank" rel="noopener">https://Zzzfans.github.io/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/</a><br>
-
-  <strong>版权声明：</strong>本文采用 <a href="https://creativecommons.org/licenses/by-nc-sa/3.0/cn/deed.zh" target="_blank">CC BY-NC-SA 3.0 CN</a> 协议进行许可
-
-</div>
-
-
-  
-  <section class="nexmoe-comment">
-    <div class="valine"></div>
-<script src="https://cdn.jsdelivr.net/npm/valine@1.3.9/dist/Valine.min.js"></script>
-<script>
-    // 使用方法 https://valine.js.org/quickstart.html
-    new Valine({
-        el: '.valine',
-        appId: 'RERFDjrDRfW3j1K4786H2u5a-gzGzoHsz',
-        appKey: 'NR5uW1bUy19m8gg9Ay4QiAJW'
-    })
-</script>
 </section>
-</div>
+
     </div>
   </div>
   <script src="https://cdn.jsdelivr.net/npm/mdui@0.4.3/dist/js/mdui.min.js"></script>
@@ -318,7 +270,7 @@
 <script>hljs.initHighlightingOnLoad();</script>
 <script src="https://cdn.jsdelivr.net/npm/lazysizes@5.1.0/lazysizes.min.js"></script>
 
-<script src="/js/app.js?v=1582460385046"></script>
+<script src="/js/app.js?v=1582460385338"></script>
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
