@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-02-25T11:04:21.523Z</updated>
+  <updated>2020-02-25T16:24:33.682Z</updated>
   <id>/</id>
   
   <author>
@@ -21,15 +21,15 @@
     <link href="/2020/02/23/%E8%A7%A3%E5%86%B3pip%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/"/>
     <id>/2020/02/23/解决pip更新问题/</id>
     <published>2020-02-23T12:13:00.000Z</published>
-    <updated>2020-02-25T11:04:21.523Z</updated>
+    <updated>2020-02-25T16:24:33.682Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;解决pip更新问题。&lt;/p&gt;
+      解决pip更新问题
     
     </summary>
     
-      <category term="python" scheme="/categories/python/"/>
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="python" scheme="/tags/python/"/>
@@ -61,15 +61,15 @@
     <link href="/2019/08/31/xrdp%E6%96%B9%E5%BC%8Fwindows-10%E8%BF%9E%E6%8E%A5ubuntu-18-04/"/>
     <id>/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/</id>
     <published>2019-08-31T04:25:11.000Z</published>
-    <updated>2020-02-25T10:54:55.950Z</updated>
+    <updated>2020-02-25T16:25:18.367Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;你一定已经查看了很多远程桌面的复制粘贴文章，稀里糊涂的配置了一大堆，可能连得上也可能连不上，这里记录了确定可以工作的一个解决方案，希望能帮到你。
+      xrdp 方式 windows 10 连接 ubuntu 18.04
     
     </summary>
     
-      <category term="Linux" scheme="/categories/Linux/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="Linux" scheme="/tags/Linux/"/>
@@ -81,15 +81,15 @@
     <link href="/2019/08/31/Qt%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95/"/>
     <id>/2019/08/31/Qt实现多级菜单/</id>
     <published>2019-08-31T03:44:34.000Z</published>
-    <updated>2020-02-25T10:53:38.767Z</updated>
+    <updated>2020-02-25T16:25:10.571Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;在众多知名的软件UI中下拉菜单、按钮菜单、右键菜单、托盘菜单、多级菜单等等是很常见的，就连Windows和linux等系统级的软件也用到这些UI元素。
+      Qt 实现多级菜单
     
     </summary>
     
-      <category term="Qt" scheme="/categories/Qt/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="Qt" scheme="/tags/Qt/"/>
@@ -101,21 +101,15 @@
     <link href="/2019/08/31/%E8%AE%BE%E7%BD%AEQLineEdit%E6%97%A0%E8%BE%B9%E6%A1%86%E4%B8%94%E9%80%8F%E6%98%8E/"/>
     <id>/2019/08/31/设置QLineEdit无边框且透明/</id>
     <published>2019-08-31T03:27:11.000Z</published>
-    <updated>2020-02-25T11:05:27.320Z</updated>
+    <updated>2020-02-25T16:25:34.070Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;pre&gt;&lt;code
-        
-      
+      设置 QLineEdit 无边框且透明
     
     </summary>
     
-      <category term="Qt" scheme="/categories/Qt/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="Qt" scheme="/tags/Qt/"/>
@@ -127,16 +121,15 @@
     <link href="/2019/08/30/Qt5-12%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B%EF%BC%88Windows%EF%BC%89/"/>
     <id>/2019/08/30/Qt5-12之程序发布教程（Windows）/</id>
     <published>2019-08-30T13:50:43.000Z</published>
-    <updated>2020-02-25T10:50:20.341Z</updated>
+    <updated>2020-02-25T16:25:02.011Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;在Windows平台下，用Qtcreator生成的SerialPort.exe,直接打开，可能出现以下等问题。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;https://img-blog.csdnimg.cn/20181224221054517.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L2Z1dHVyZV9haQ==,size_16,color_FFFFFF,t_70&quot; alt=&quot;img&quot;&gt;&lt;/p&gt;
+      Qt5.12 之程序发布教程（Windows）
     
     </summary>
     
-      <category term="Qt" scheme="/categories/Qt/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="Qt" scheme="/tags/Qt/"/>
@@ -168,15 +161,15 @@
     <link href="/2019/08/30/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>/2019/08/30/hexo-github搭建博客/</id>
     <published>2019-08-30T06:46:38.000Z</published>
-    <updated>2020-02-25T10:45:54.644Z</updated>
+    <updated>2020-02-25T16:24:47.853Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;好的学习习惯就是随手记录学习历程，随手记录一下最近刚学习的用Hexo+GitHub搭建博客的过程。小白一个，可提建议，勿喷~
+      Hexo+GitHub 搭建博客
     
     </summary>
     
-      <category term="博客" scheme="/categories/%E5%8D%9A%E5%AE%A2/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="博客" scheme="/tags/%E5%8D%9A%E5%AE%A2/"/>
