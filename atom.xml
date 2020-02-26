@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="/"/>
-  <updated>2020-02-25T16:24:33.682Z</updated>
+  <updated>2020-02-26T04:40:49.481Z</updated>
   <id>/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="/2020/02/23/%E8%A7%A3%E5%86%B3pip%E6%9B%B4%E6%96%B0%E9%97%AE%E9%A2%98/"/>
     <id>/2020/02/23/解决pip更新问题/</id>
     <published>2020-02-23T12:13:00.000Z</published>
-    <updated>2020-02-25T16:24:33.682Z</updated>
+    <updated>2020-02-26T04:40:49.481Z</updated>
     
     <summary type="html">
     
@@ -41,15 +41,15 @@
     <link href="/2020/02/15/error%20No%20rule%20to%20make%20target%20&#39;...&#39;.%20Stop.%20%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88/"/>
     <id>/2020/02/15/error No rule to make target &#39;...&#39;. Stop. 解决方案/</id>
     <published>2020-02-15T06:25:11.000Z</published>
-    <updated>2020-02-25T10:25:40.728Z</updated>
+    <updated>2020-02-26T04:38:18.792Z</updated>
     
     <summary type="html">
     
-      &lt;p&gt;error No rule to make target ‘…’. Stop. 解决方案。&lt;/p&gt;
+      error No rule to make target &#39;...&#39;. Stop. 解决方案
     
     </summary>
     
-      <category term="Qt" scheme="/categories/Qt/"/>
+      <category term="技术" scheme="/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
       <category term="Qt" scheme="/tags/Qt/"/>
@@ -61,7 +61,7 @@
     <link href="/2019/08/31/xrdp%E6%96%B9%E5%BC%8Fwindows-10%E8%BF%9E%E6%8E%A5ubuntu-18-04/"/>
     <id>/2019/08/31/xrdp方式windows-10连接ubuntu-18-04/</id>
     <published>2019-08-31T04:25:11.000Z</published>
-    <updated>2020-02-25T16:25:18.367Z</updated>
+    <updated>2020-02-26T04:39:39.077Z</updated>
     
     <summary type="html">
     
@@ -81,7 +81,7 @@
     <link href="/2019/08/31/Qt%E5%AE%9E%E7%8E%B0%E5%A4%9A%E7%BA%A7%E8%8F%9C%E5%8D%95/"/>
     <id>/2019/08/31/Qt实现多级菜单/</id>
     <published>2019-08-31T03:44:34.000Z</published>
-    <updated>2020-02-25T16:25:10.571Z</updated>
+    <updated>2020-02-26T04:39:26.641Z</updated>
     
     <summary type="html">
     
@@ -121,7 +121,7 @@
     <link href="/2019/08/30/Qt5-12%E4%B9%8B%E7%A8%8B%E5%BA%8F%E5%8F%91%E5%B8%83%E6%95%99%E7%A8%8B%EF%BC%88Windows%EF%BC%89/"/>
     <id>/2019/08/30/Qt5-12之程序发布教程（Windows）/</id>
     <published>2019-08-30T13:50:43.000Z</published>
-    <updated>2020-02-25T16:25:02.011Z</updated>
+    <updated>2020-02-26T04:39:15.950Z</updated>
     
     <summary type="html">
     
@@ -141,15 +141,15 @@
     <link href="/2019/08/30/%E5%B0%86%E6%9C%AC%E5%9C%B0%E6%96%87%E4%BB%B6%E4%B8%8A%E4%BC%A0%E5%88%B0github/"/>
     <id>/2019/08/30/将本地文件上传到github/</id>
     <published>2019-08-30T08:09:47.000Z</published>
-    <updated>2020-02-25T11:02:35.378Z</updated>
+    <updated>2020-02-26T04:40:32.677Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h1&gt;&lt;p&gt;GitHub开源代码库以及版本控制系统，可以托管各种git库，可以将个人Blog或小型项目托管到GitHub通过Git将本地文件上传到GitHub上边也可用于保存。
+      将本地文件上传到 GitHub
     
     </summary>
     
-      <category term="GitHub" scheme="/categories/GitHub/"/>
+      <category term="转载" scheme="/categories/%E8%BD%AC%E8%BD%BD/"/>
     
     
       <category term="GitHub" scheme="/tags/GitHub/"/>
@@ -161,7 +161,7 @@
     <link href="/2019/08/30/hexo-github%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/"/>
     <id>/2019/08/30/hexo-github搭建博客/</id>
     <published>2019-08-30T06:46:38.000Z</published>
-    <updated>2020-02-25T16:24:47.853Z</updated>
+    <updated>2020-02-26T04:38:59.833Z</updated>
     
     <summary type="html">
     
