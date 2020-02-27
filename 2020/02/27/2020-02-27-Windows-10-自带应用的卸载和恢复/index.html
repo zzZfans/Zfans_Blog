@@ -5,7 +5,7 @@
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
     
     <title itemprop="name">
-      music | Zfans. - 浮生若梦，冷暖自知。
+      Category: Windows 10 | Zfans. - 浮生若梦，冷暖自知。
     </title>
     
     <link rel="shortcut icon" href="https://t1.picb.cc/uploads/2020/02/25/khPuoT.jpg">
@@ -369,66 +369,148 @@
   </div>
 </header>
 
-        <div class="pattern-center-blank"></div>
-  
-    <div class="pattern-center ">
-      <div class="pattern-attachment-img">
-        <img src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.4/img/banner/music.jpg" class="lazyload" onerror="imgError(this,3)" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;">
-      </div>
-      <header class="pattern-header ">
-        <h1 class="entry-title">
-        喜欢的音乐</h1>
-      </header>
+      <link rel="stylesheet" type="text/css" href="/css/sharejs.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css">
+<div class="pattern-center-blank"></div>
+
+  <div class="pattern-center single-center">
+    <!-- 有配图默认渲染第一张 -->
+    <div class="pattern-attachment-img lazyload" style="background-image: url(https://t1.picb.cc/uploads/2020/02/27/kvyytX.jpg);" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://t1.picb.cc/uploads/2020/02/27/kvyytX.jpg">
     </div>
-  
-  <div id="content" class="site-content">
-    <article class="post-item post-301 page type-page status-publish has-post-thumbnail hentry">
-      
-<meting-js server="netease" type="playlist" id="2731690811" mutex="true">
-</meting-js>
+    <header class="pattern-header single-header">
+      <h1 class="entry-title">
+      Windows 10 自带应用的卸载和恢复</h1>
+      <p class="entry-census">
+        <span>
+          <a href="http://zfans.xyz/">
+            <img src="https://t1.picb.cc/uploads/2020/02/25/khPuoT.jpg">
+          </a>
+        </span>
+        <span>
+          <a href="http://zfans.xyz/">Zfans.</a>
+        </span>
+        <span class="bull">
+        ·</span>
+        2020-2-27<span class="bull">
+        ·</span>
+      <span id="busuanzi_value_page_pv"></span>次阅读</p>
+    </header>
+  </div>
 
-<meting-js server="netease" type="playlist" id="419239189" mutex="true">
-</meting-js>
+<div id="content" class="site-content">
+  <div id="primary" class="content-area">
+    <main id="main" class="site-main" role="main">
+      <article id="post-1" class="post-1 post type-post status-publish format-standard has-post-thumbnail hentry category-uncategorized">
+        <div class="toc"></div>
+        <!--<div class="toc-entry-content"><!-- 套嵌目录使用（主要为了支援评论）-->
+        
+        <div class="entry-content">
+          <h1 id="一、Windows-10-自带应用的卸载"><a href="#一、Windows-10-自带应用的卸载" class="headerlink" title="一、Windows 10 自带应用的卸载"></a>一、Windows 10 自带应用的卸载</h1><p>利用<a href="https://geekuninstaller.com/" target="_blank" rel="noopener">Geek Uninstaller</a>软件卸载，如图。</p>
+<p><img src="https://t1.picb.cc/uploads/2020/02/27/khoDDw.png" alt="Alt"></p>
+<p>进入方法：软件界面—&gt;查看—&gt;Windows Store Apps</p>
+<h1 id="二、Windows-10-自带应用的恢复"><a href="#二、Windows-10-自带应用的恢复" class="headerlink" title="二、Windows 10 自带应用的恢复"></a>二、Windows 10 自带应用的恢复</h1><h2 id="1-查看应用"><a href="#1-查看应用" class="headerlink" title="1.查看应用"></a>1.查看应用</h2><p>在开始菜单中的 <strong>Windows PowerShell</strong> 文件夹中以管理员方式（右键）打开 <strong>Windows PowerShell</strong> 。</p>
+<p>（注意：每执行一次命令，左上角都会闪现黄色内容，如果没有闪现，说明命令语句错误。）</p>
+<p>输入命令</p>
+<pre><code class="powershell">Get-AppxPackage
+</code></pre>
+<p>则可以查看所有已安装的应用。一定要进行这一步骤，后面会用到里面的内容。查询出后把他们复制粘贴到记事本中以便后续步骤的进行（用鼠标选中要复制的内容，<code>CTRL+C</code>后选中颜色消失，但其实已经复制了）。</p>
+<p><img src="https://t1.picb.cc/uploads/2020/02/27/khodTg.png" alt="Alt"></p>
+<h2 id="2-恢复删除的应用"><a href="#2-恢复删除的应用" class="headerlink" title="2.恢复删除的应用"></a>2.恢复删除的应用</h2><h3 id="2-1-一次性恢复所有应用"><a href="#2-1-一次性恢复所有应用" class="headerlink" title="2.1.一次性恢复所有应用"></a>2.1.一次性恢复所有应用</h3><p>输入命令</p>
+<pre><code class="powershell">Get-AppxPackage -AllUsers | Foreach {Add-AppxPackage -DisableDevelopmentMode -Register &quot;$($_.InstallLocation)\AppXManifest.xml&quot;}
+</code></pre>
+<p>则可恢复所有应用。</p>
+<h3 id="2-2-单独恢复某个应用"><a href="#2-2-单独恢复某个应用" class="headerlink" title="2.2.单独恢复某个应用"></a>2.2.单独恢复某个应用</h3><p>输入命令</p>
+<pre><code class="powershell">Add-appxpackage -register &quot;C:\Program Files\WindowsApps\Microsoft.BingWeather_4.9.51.0_x86__8wekyb3d8bbwe\appxmanifest.xml&quot; -disabledevelopmentmode
+</code></pre>
+<p> 上面这个命令是安装天气应用，可以拆分为三部分来看：</p>
+<pre><code class="powershell">Add-appxpackage -register &quot;应用的安装位置\appxmanifest.xml&quot; -disabledevelopmentmode
+</code></pre>
+<p>对于所有的应用来说，第一部分和第三部分是固定的，第二部分是应用的安装位置，是根据第一步里查找的应用的<strong>InstallLocation</strong>决定的。如下图红色标记则等同于上面的</p>
+<pre><code class="powershell">C:\Program Files\WindowsApps\Microsoft.BingWeather_4.9.51.0_x86__8wekyb3d8bbwe
+</code></pre>
+<p>所以如果安装图片应用，则将图片红线的内容替换掉这部分内容。</p>
+<p><img src="https://t1.picb.cc/uploads/2020/02/27/khoYq8.png" alt="Alt"></p>
 
-      <!-- .entry-content -->
-      
-      <div class="single-reward">
-        <div class="reward-open">赏
-          <div class="reward-main">
-            <ul class="reward-row">
-              <li class="alipay-code"><img src="https://t1.picb.cc/uploads/2020/02/26/khROwN.png"></li>
-              <li class="wechat-code"><img src="https://t1.picb.cc/uploads/2020/02/26/khRWAe.png"></li>
-            </ul>
+        </div>
+        <!-- .entry-content -->
+        <div class="single-reward">
+          <div class="reward-open">赏
+            <div class="reward-main">
+              <ul class="reward-row">
+                <li class="alipay-code"><img src="https://t1.picb.cc/uploads/2020/02/26/khROwN.png"></li>
+                <li class="wechat-code"><img src="https://t1.picb.cc/uploads/2020/02/26/khRWAe.png"></li>
+              </ul>
+            </div>
           </div>
         </div>
-      </div>
-      <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
-      <footer class="post-footer">
-        <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
-        <div class="post-tags">
-        </div>
-        <div class="post-share">
-          <div class="social-share sharehidden share-component"></div>
-          <i class="iconfont show-share icon-forward"></i>
-        </div>
-      </footer><!-- .entry-footer -->
-    </article>
+        <div style="text-align:center; width: 100%" class="social-share share-mobile" data-disabled="diandian, tencent"></div>
+        <footer class="post-footer">
+          <div class="post-lincenses"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" target="_blank" rel="nofollow"><i class="fa fa-creative-commons" aria-hidden="true"></i> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a></div>
+          <div class="post-tags">
+          </div>
+          <div class="post-share">
+            <div class="social-share sharehidden share-component"></div>
+            <i class="iconfont show-share icon-forward"></i>
+          </div>
+        </footer><!-- .entry-footer -->
+      </article>
       <!-- #post-## -->
+      <div class="toc" style="background: none;"></div>
+      <section class="post-squares nextprev">
+        
+        
+          
+            <div class="post-nepre full next">
+          
+            <a href="/2020/02/23/解决pip更新问题/" rel="next">
+              <div class="background">
+                <img class="lazyload" src="https://cdn.jsdelivr.net/gh/honjun/cdn@1.6/img/loader/orange.progress-bar-stripe-loader.svg" data-src="https://t1.picb.cc/uploads/2020/02/25/khPer7.jpg" style="width: 100%; height: 100%; object-fit: cover; pointer-events: none;" onerror="imgError(this,3)" src="https://t1.picb.cc/uploads/2020/02/25/khPer7.jpg">
+              </div>
+              <span class="label">
+              Next Post</span>
+              <div class="info">
+                <h3>
+                解决pip更新问题</h3>
+                <hr>
+              </div>
+            </a>
+          </div>
+        
+      </section>
+      
+<div id="vcomments"></div>
+<script>
+  window.onload = function(){
+      var valine = new Valine();
+      valine.init({
+        el: '#vcomments',
+        appId: "RERFDjrDRfW3j1K4786H2u5a-gzGzoHsz",
+        appKey: "NR5uW1bUy19m8gg9Ay4QiAJW",
+        path: window.location.pathname,
+        placeholder: "你是我一生只会遇见一次的惊喜 ..."
+      })
+  }
+</script>
+
       <section class="author-profile">
         <div class="info" itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-          <a href="/about/" class="profile gravatar"><img src="https://t1.picb.cc/uploads/2020/02/25/khPuoT.jpg" itemprop="image" alt="Zfans." height="70" width="70"></a>
+          <a href="http://zfans.xyz/" class="profile gravatar"><img src="https://t1.picb.cc/uploads/2020/02/25/khPuoT.jpg" itemprop="image" alt="Zfans." height="70" width="70"></a>
           <div class="meta">
             <span class="title">Author</span>
             <h3 itemprop="name">
-            <a href="https://zfans.xyz/" itemprop="url" rel="author">Zfans.</a>
+            <a href="http://zfans.xyz/" itemprop="url" rel="author">Zfans.</a>
             </h3>
           </div>
         </div>
         <hr>
         <p><i class="iconfont icon-write"></i>浮生若梦，冷暖自知。</p>
       </section>
+    </main><!-- #main -->
   </div><!-- #primary -->
 </div>
+
+
+
     </div>    
     <div class="ins-search">
     <div class="ins-search-mask"></div>
